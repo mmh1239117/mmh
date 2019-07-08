@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> new document </title>
+  <meta charset="UTF-8">
+	<link rel="stylesheet" href="lunbo.css">
+	<link rel="stylesheet" href="footer.css">
+	<style>
+	  *{margin:0;padding:0;margin:0 auto;}
+	 .header{
+	     width:1420px;
+			 height:100px;
+		   position:relative;
+			 margin:0 auto;
+		 }
+		    a{
+    color: #000;
+    text-decoration: none;
+    }
+    ul {
+    padding:10px;
+    list-style: none;
+    }
+    #menu {
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px snow;
+    }
+    #menu li {
+    float: left;
+    margin-top: 30px;
+		margin-left:35px;
+    line-height: 22px;
+    padding: 0;
+    position: relative;
+    }
+    #menu li a {
+    padding: 10px 15px;
+    display: inline-block;
+    }
+    #menu li .hover {
+    background: #fff;
+    opacity: 0.5;
+    color: gray;
+    border-radius: 5px;
+    }
+    #menu li .lis {
+    width: 100px;
+    height: 30px;
+    line-height: 40px;
+    border-radius: 5px;
+    background: lightblue;
+    position: absolute;
+    top: 40px;
+    }
+    #menu li .lis a {
+    padding: 0 10px;
+    background: none;
+    opacity: 1;
+    color: #fff;
+    }
+    #menu li .lis a:hover {
+    text-decoration: underline;
+    }
+		 .logo img{
+		  margin-top:20px;
+			margin-left:60px;
+		 }
+		  .header-right{
+			  margin-left:800px;
+			}
+			 .header-right button{
+			  width:60px;height:38px;
+				margin-top:30px;
+				margin-right:180px;
+			}
+			 .header-right .gs{
+			  margin-top:20px;
+				margin-right:90px;
+				width:50px;
+				height:50px;
+			}
+		 .header-right .input{
+			 position:absolute;
+			  width:300px;
+				padding:10px;
+				right:260px;
+				top:50px;
+			}
+		  .header-right li{
+			list-style:none;
+			padding:20px;
+			position:absolute;
+			top:-5px;
+			right:10px;
+		 }
+		  .header-into{
+		   position:absolute;
+			 border:1px solid green;
+			 border-radius:5px;
+			 line-height:30px;
+			 height:35px;
+			 top:45px;
+			 right:10px;
+			 color:#ddd;
+		 }
+      .header-into a{
+		   text-decoration:none;
+			 color:#f00;
+			 margin-top:20px;
+		 }
+			.section{
+			 width:100%;height:1560px;
+			 padding:56px 0;
+			}
+     .section .section-left{
+		  width:235px;height:1569px;
+			position:relative;
+			padding:0 15px;
+			left:180px;
+			top:320px;
+			float:left;
+		 }
+		 .section .section-left .ul{
+		 width:215px;
+		 background:#ddd;
+		 }
+		 .section .section-left .ul li{
+		  width:210px;height:25px;
+		 }
+		 .section .section-left .ul li:hover{
+		  background:green;
+		 }
+		 .section .section-left p{
+		  font-size:2rem;
+			padding:0;
+		  font-family: 'Lato', sans-serif;
+			border-bottom: 1px solid #000;
+			margin-top:30px;
+		 }
+		 .section .section-left ul li{
+		  list-style:none;
+			display: list-item;
+			padding:5px;
+			margin-left:-5px;
+		 }
+		 .section .section-left .lorem{
+		   width:205px;
+			 height:53px;
+		   border:1px solid #fff;
+		   background-image:url("img/product1.jpg");
+			 line-height:50px;
+			 padding:0 15px;
+			 color: #fff;
+			 margin-top:30px;
+		 }
+		  .section .section-left .lorem input{
+			 background-color:rgba(0,0,0,0.0);
+			 width:90px;
+			 height:25px;
+			 color:#ffff;
+			}
+		 .section .section-left .lorem input a{
+		   font-size: 0.8em;
+       float: right;
+       text-decoration: none;
+       border: 1px solid #fff;
+       padding: 0.2em 0.4em;
+		 }
+		  .section .section-left .lorem1 div a{
+			 text-decoration:none;
+			}
+		  .section .section-left .lorem1 div{
+			 height:112px;
+			 padding:0 10px;
+			 margin-left:-10px;
+			 margin-top:30px;
+			}
+		 .section .section-left .lorem1 div ul li{
+			 list-style:none;
+			 width:40px;height:30PX;
+			 border:1px solid #000;
+			 float:left;
+			 margin:2px;
+			 font-size:14px;
+       line-height:25px;
+		 }
+		 .section .section-left .lorem3{
+		  width:205px;height:95px;
+			position:relative;
+			top:45px;
+		 }
+		 .section .section-left .lorem3 a{
+		  text-decoration:none;
+			color: #000;
+			position:absolute;
+			top:2px;
+			left:102px;
+		 }
+		 .section .section-left .lorem3 span{
+		  font-size: 1.7em;
+       position:absolute;
+      display: block;
+      color: #EF5F21;
+      top:95px;
+			left:100px;
+		 }
+		 .section .section-left .lorem4{
+		  width:205px;height:95px;
+			position:relative;
+			top:110px;
+		 }
+		 .section .section-left .lorem4 a{
+		  text-decoration:none;
+			color: #000;
+			position:absolute;
+			left:102px;
+		 }
+		 .section .section-left .lorem4 span{
+		  font-size: 1.7em;
+       position:absolute;
+      display: block;
+      color: #EF5F21;
+      top:93px;
+			left:100px;
+		 }
+		 .section .section-left .im{
+		   width:205px;
+			 height:238px;
+			 position:absolute;
+			 bottom:270px;
+
+		 }
+		 .section .section-left .lorem5{
+		  position:absolute;
+			bottom:270px;
+			left:20px;
+		 }
+		 .section .section-left .lorem5 a{
+		  text-decoration:none;
+			font-size:36px;
+			position:absolute;
+		  top:-190px;
+			color:orange;
+		 }
+		 .section .section-left .lorem5 h1{
+		  text-decoration:none;
+			font-size:86px;
+			position:absolute;
+		  top:-105px;
+			left:10px;
+			color:orange;
+		 }
+		 .section .section-right{
+		  width:755px;height:1250px;
+			border:1px solid #fff;
+			position:relative;
+			left:280px;
+			top:-355px;
+		 }
+		 .section .section-right .col-1{
+		  width:205px;
+			height:308px;
+			position:absolute;
+			bottom:-60px;
+			left:-10px;
+		 }
+		 .section .section-right h3{
+		 position:absolute;
+		 bottom:270px;
+		 }
+		 .section .section-right .wrap {
+			width:205px;
+			height:268px;
+			position:absolute;
+			margin:10px;
+			bottom:0px;
+		 }
+		 .mask{
+		  position:absolute;
+			top:0px;
+			left:0px;
+			width:205px;
+			height:270px;
+			background:rgba(101,101,101,0.6);
+			color:#ffffff;
+			opacity:0;
+		 }
+		 .mask,.mask1 h1{
+		  text-align:center;
+			line-height:250px;
+		 }
+		 .wrap :hover .mask{
+		 opacity:1;}
+		 .wrap :hover .mask1{
+		 opacity:1;}
+		 /*.section .section-right .wrap .col-1:hover h1{
+			 display:block;
+			}
+			.section .section-right .wrap .col-1 h1{
+			 display:none;
+			 background:#333;
+			 color:white;
+			 padding:10px 20px;
+			}*/
+		 .section .section-right img{
+		  width:205px;
+			height:268px;
+		 }
+		 .section .section-right p{
+		  font-size: 1em;
+      color:#949494;
+      text-align:center;
+      line-height:1.3em;
+      padding: 1em 0;
+		 }
+		 .section .section-right a{
+		 font-size: 1.1em;
+     color: #FFF;
+     text-align: center;
+     background: #EF5F21;
+     padding: 0.5em 4em;
+		 text-decoration:none;
+		}
+		.section .section-right .col-2{
+		  width:205px;
+			height:308px;
+			position:absolute;
+			bottom:-60px;
+			left:261px;
+		 }
+		 .section .section-right .col-3{
+		  width:205px;
+			height:308px;
+			position:absolute;
+			bottom:-60px;
+			left:521px;
+		 }	 
+		 .section .section-right .co-2{
+		  color:#000;
+			font-size:16px;
+			position:absolute;
+			top:1px;
+			left:5px;
+		 }
+		 .section .section-right .co-2 a{
+		  color:#000;
+			font-size:12px;
+			float:left;
+			margin-top:10px;
+			margin-left:1px;
+			background:#fff;
+			padding:0;
+		 }
+		  .section .section-right .co-3 a{
+			 position:absolute;
+			 top:90px;
+			 left:5px;
+			 padding:0;
+			 font-size:30px;
+			 color:orange;
+			 background:#fff;
+			}
+			.section .section-right .co-4 h6{
+			  font-size:1em;
+         color: #2c3e50;
+        font-family: 'Lato',serif;
+        line-height: 1.8em;
+        margin:1em 0;
+			}
+			.section .section-right .dinner{
+			 width:150px;
+			 height:30px;
+			}
+			 .section .section-right .a{
+			  position:absolute;
+			  top:290px;
+			  right:200px;
+			 }
+			 .section .section-right .co-4 a{
+			  position:absolute;
+			  top:310px;
+				left:5px;
+			  height:23px;
+				width:80px;
+				background-color:orange;
+				border-top:1px solid #ddd;
+				border-bottom:1px solid #ddd;
+				line-height:25px;
+			 }
+			 .section .section-right .co-4 a:hover{
+			  background-color:green;
+			 }
+			 .section .section-right .co-5 {
+			  position:absolute;
+				top:380px;
+				left:-10px;
+			 }
+			 .section .section-right .co-5 li{
+			  float:left;
+				margin-top:10px;
+				margin-left:10px;
+				list-style:none;
+			 }
+			 .section .section-right .co-6 {
+			  position:absolute;
+				top:480px;
+				left:0px;
+				width:543px;
+				height:130px;
+				/*float:left;
+				margin-top:190px;
+				margin-left:-180px;*/
+			 }
+			 .section .section-right .co-6 img{
+				width:100px;
+				height:100px;
+			 }
+			  .section .section-right .co-6 h6{
+				margin-top:-100px;
+				margin-left:150px;
+				font-size:12px;
+			 }
+			 .section .section-right .co-6 a{
+				margin-left:100px;
+				font-size:12px;
+				background:#fff;
+			 }
+			 .section .section-right .co-6 span{
+			  position:absolute;
+				top:70px;
+				left:148px;
+				font-size:24px;
+			 }
+			 .section .section-right .co-7{
+			  position:absolute;
+				bottom:550px;
+				list-style:none;
+			 }
+			 .section .section-right .co-8{
+			  width:750px;
+				height:150px;
+				position:absolute;
+				bottom:350px;
+				border:1px solid #fff;
+			 }
+			 #tab li{
+	    float: left; list-style: none;
+			border-bottom:1px solid #000;
+    }
+		 #tab>.active{
+		  border:1px solid #000;
+			border-bottom:0;
+		 }
+    #tab li a{
+    display:inline-block;
+    text-decoration:none;
+     width: 101px; height: 40px;
+   	line-height: 40px;
+  	text-align: center;
+     color:#000;
+		 background:#fff;
+   }
+    #container{
+   	position: relative;
+    }
+    #a,#b,#c{
+  	width: 666px;
+   	height: 40px;
+   	padding:30px;
+  	position: absolute;
+  	top: 40px;
+  	left: 0;
+   }
+   #tab li:first-child,#a{
+  	background-color: #ffcc00;
+  }
+   #tab li:first-child+li,#b{
+ 	background-color:green;
+ }
+  #tab li:first-child+li+li,#c{
+	background-color: #00ccff;
+}
+     #smallImg{
+       width: 350px;
+       height: 350px;
+       position: relative;
+			 top:-30px;
+       left:-380px;
+		   z-index:100;
+      }
+    #smallImg img{
+		 left:10px;
+     width: 300px;
+     height: 300px;
+          } 
+     #lay{
+       position: absolute;
+       left:0px;
+       top: 0; 
+       border: 1px solid #666;
+        opacity: 0.6;
+        filter: alpha(opacity = 60);
+         background: #fff;
+       display: none;
+       cursor: move;
+          }
+      #bigImg{
+         width: 300px;
+          height: 320px;
+          position: absolute;
+         left: 600px;
+          overflow: hidden;
+           top: 120px;
+           display: none;
+			  z-index:100;
+          }
+        #bigImg img{
+             position: absolute;
+              left:30px;
+              top: 0;
+          }
+        #prom{
+	 position:absolute;
+	 left:100px;
+	 top:425px;
+	 z-index:100;
+	}
+	 #prom:after{
+	  content:"";
+		display:block;
+		clear:both;
+	 }
+    #prom  .my-smaller{
+    width:70px;
+	 height:70px;
+	 border:1px solid #f00;
+	 margin-top:16px;
+	 margin-left:23px;
+	}
+	 #vd{position:absolute;
+	    bottom:-345px;
+		 }
+	</style>
+<body>
+<!-- 导航 -->
+ <div class="header">
+   <div>
+        <ul id = "menu">
+       <li>
+         <a href ="01-666升级版.html" >FOR HIM</a>
+       <div class ="lis" style ="display:none;">
+         <a href = "javascript:;">FOR ONE</a >
+         <a href = "javascript:;">FOR TWO</a>
+         <a href="javascript:;">FOR THREE</a>
+				 <a href="javascript:;">FOR FOUR</a>
+				 <a href="javascript:;">FOR FIVE</a>
+       </div>
+       </li>
+       <li>
+         <a href="04_shoes.html">FOR HEM</a>
+       <div class="lis" style="display:none;">
+         <a href="javascript:;">FOR HIM</a>
+         <a href="javascript:;">FOR SHE</a>
+         <a href="javascript:;">FOR PPP</a>
+				 <a href="javascript:;">LOOK HTML5</a>
+         <a href="javascript:;">LOOK Jquery</a>
+       </div>
+       </li>
+       <li>
+         <a href="product.html">LOOK BOOK</a>
+       <div class="lis" style="display:none;">
+         <a href="javascript:;">LOOK JS</a>
+         <a href="javascript:;">LOOK Css3</a>
+         <a href="javascript:;">LOOK HTML5</a>
+         <a href="javascript:;">LOOK Jquery</a>
+       </div>
+       </li>
+			  <li>
+         <a href="product.html">ABOUT US</a>
+       <div class="lis" style="display:none;">
+         <a href="javascript:;">LOOK JS</a>
+				 <a href="javascript:;">LOOK HTML5</a>
+         <a href="javascript:;">LOOK Jquery</a>
+       </div>
+       </li>
+       </ul>
+     </div>
+	<div class="logo">
+   <img src="images/logo-dark.png" alt="">
+	</div>
+	<div class="header-right">
+		<ul>
+			<li>
+			  <a href="#"><input class="input" type="text" placeholder="请输入要搜索的内容" width="100" height="20"></a>
+				<button>搜索</button>
+			</li>
+			<li>
+			  <a href="06_shopping.html"><img class="gs" src="images/shop_car.png" alt="" title="购物车"></a>
+			</li>
+	</ul>
+		</div>
+		<div class="header-into">
+			<a href="insert.html" title="登陆">登陆</a> /
+			<a href="#" title="注册">注册</a>
+  	</div>
+ </div>
+</div>
+<hr>
+<!--详情页 -->
+<div class="section">
+  <div class="section-left">
+	  <p>Categories</p>
+		<ul class="ul">
+		 <li>Men</li>
+		 <li>Women</li>
+		 <li>Kids</li>
+		 <li>Accesories</li>
+		 <li>Shoes</li>
+		</ul>
+		<div class="lorem">
+		  <span>Lorem Ipsum</span>
+			<a href="04_shoes.html"><input type="button" value="SHOW NOW"></a>
+		</div>
+		<div class="lorem1">
+		  <p>Tags</p>
+			<div>
+			<ul>
+			 <li><a href="04_shoes.html">design</a></li>
+			 <li><a href="04_shoes.html">fashion</a></li>
+			 <li><a href="04_shoes.html">lorem</a></li>
+			 <li><a href="04_shoes.html">design</a></li>
+			 <li><a href="04_shoes.html">fashion</a></li>
+			 <li><a href="04_shoes.html">design</a></li>
+			 <li><a href="04_shoes.html">design</a></li>
+			 <li><a href="04_shoes.html">design</a></li>
+			 <li><a href="04_shoes.html">fashion</a></li>
+			 <li><a href="04_shoes.html">lorem</a></li>
+			 <li><a href="04_shoes.html">fashion</a></li>
+			 <li><a href="04_shoes.html">design</a></li>
+			</ul>
+			</div>
+		</div>
+		 <p style="margin-top:50px">Best Sellers</p>
+		<div class="lorem3">
+			<img src="img/p1.jpg" alt="">
+			<a href="04_shoes.html">Lorem ipsum dolor sit amet consectetuer</a>
+			<span>$40.00</span>
+		</div>
+		<div class="lorem4">
+			<img src="img/p2.jpg" alt="">
+			<a href="04_shoes.html">Lorem ipsum dolor sit amet consectetuer</a>
+			<span>$40.00</span>
+		</div>
+		<img class="im" src="img/pro.jpg" alt="">
+		<div class="lorem5">
+		  <a href="04_shoes.html">DISCOUNT</a>
+			<h1>60%</h1>
+		</div>
+	</div>
+	<div>
+<div id="smallImg">
+     <!--<img id="m-img" src="img/si1.jpg" alt="" class="my-big">-->
+		    <video width="320" height="240" controls>  
+    <source src="images/v.f30.mp4" type="video/mp4">  
+    </video>
+   <div id="lay"></div>
+   </div>
+   <div id="bigImg">
+     <img src="img/si1.jpg" alt="">
+    </div>
+	 <div id="prom">
+      <img src="img/si-1.jpg" class="my-smaller">
+      <img src="img/si-2.jpg" class="my-smaller">
+      <img src="img/si-3.jpg" class="my-smaller">
+      <img src="img/si-1.jpg" class="my-smaller">
+   </div>
+ <div class="section-right">
+		<div class="co-2">
+		 <h1>Lorem Ipsum</h1>
+     <a href="05_shoes-small.html">⭐⭐⭐⭐⭐</a>
+		 <a href="05_shoes-small.html">1 customer review</a>
+		</div>
+		<div class="co-3">
+		 <a href="05_shoes-small.html">$ 95.00</a>
+		</div>
+		<hr style="margin-top:140px">
+		<div class="co-4">
+		 <h6>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat</h6>
+		</div>
+		<select class="dinner">
+		   <a href="05_shoes-small.html"><option value="bj">color</option></a>
+		   <option value="sh">red</option>
+		   <option value="nj">green</option>
+		   <option value="sz">pink</option>
+		   <option value="pi">black</option>
+		 </select>
+		 <select class="dinner">
+		  <option value="">size</option>
+		  <option value="">X</option>
+		  <option value="">XX</option>
+		  <option value="">XXL</option>
+		  <option value="">XXXL</option>
+		 </select>
+		 <div class="co-4">
+		  <a href="#">加购物车</a>
+		 </div>
+		 <div class="co-5">
+		  <ul>
+			  <li><a href="#a1">Description</a></li>
+			  <li><a href="#a2">Addtional Informatioan</a></li>
+			</ul>
+			<p id="a1" style="display:none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque cum.</p>
+			 <p id="a2" style="display:none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque cum.</p>
+		 </div>
+		 <div class="co-6">
+		  <img src="img/co.png" alt="">
+			<h6>Hendri - September 3, 2014</h6>
+			<a href="05_shoes-small.html">⭐⭐⭐⭐⭐</a>
+			<span>该用户对商品/服务的标题、价格、详情等任何信息<br></span>
+		 </div>
+		 <div class="co-7">
+		 <a href="05_shoes-small.html">ADD REVIEW</a>
+		 </div>
+		 <div class="co-8">
+		   <ul id="tab">
+			   <li class="active"><a data-click="tab" href="javascript:;" data-div="a">网友评论</a></li>
+			   <li><a data-click="tab" href="javascript:;" data-div="b">珍贵留言</a></li>
+			   <li><a data-click="tab" href="javascript:;" data-div="c">产品详情</a></li>
+			 </ul> 
+			 <br>
+			 <div id="container">
+			 <div id="a">火箭在和爵士的首轮季后赛中2-0领先，哈登的实力也让对手们感到佩服。卢比奥在接受采访时就对哈登送上了很高的评价。哈登是历史最杰出得分手之一，我们必须继续力争找到让他打得困难的办法。</div>
+			 <div id="b">哈登是历史最杰出得分手之一，我们必须继续力争找到让他打得困难的办法，卢比奥表示，这就看我们是不是相信我们的战术了。</div>
+			 <div id="c">这就看我们是不是相信我们的战术了，我们要信任自己的打法，我想我们至今尚未打出100%的表现来，我想如果你不是投入100%进去，那你就已经输掉了战争。</div>
+		 </div>
+		 </div>
+		 <div class="wrap">
+		  <h3>商品推荐:</h3>
+	  <div class="col-1">
+		 <img src="img/pi3.jpg" alt="">
+			 <div class="mask">
+			<h1>T-SHIRT</h1>
+			</div>
+		 <p>It is a long established fact that a reader</p>
+		 <a href="#">$500.00</a>
+		</div>
+		<div class="col-2 ">
+		 <img src="img/pi4.jpg" alt="">
+		 <div class="mask">
+		 <h1>CAT</h1>
+		 </div>
+		 <p>It is a long established fact that a reader</p>
+		 <a href="#">$500.00</a>
+		</div>
+		<div class="col-3">
+		 <img src="img/pi2.jpg" alt="">
+		 <div class="mask">
+		 <h1>SHOES</h1>
+		 </div>
+		 <p>It is a long established fact that a reader</p>
+		 <a href="#">$500.00</a>
+		</div>
+	</div>
+     <video id="vd" width="320" height="240" controls>  
+    <source src="images/v.f30.mp4" type="video/mp4">  
+    </video>
+</div>
+<!--版权-->
+ <div class="ft">
+   <div class="ft-1">
+	  <p>Some More</p>
+		<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed ligula ac metus finibus hendrerit sed at libero. Praesent blandit dignissim elit, vel feugiat nulla porta a. Praesent tellus eros, consectetur quis tortor at, tempor varius quam.</span>
+	 </div>
+	 <div class="ft-2">
+	  <p>Some More</p>
+		<img src="images/169x169_10.jpg" alt="">
+     <img src="images/169x169_11.jpg" alt="">
+     <img src="images/169x169_12.jpg" alt="">
+     <img src="images/169x169_13.jpg" alt="">
+     <img src="images/169x169_5.jpg" alt="">
+     <img src="images/169x169_6.jpg" alt="">
+	 </div>
+	 <div class="ft-3">
+	  <p>Latest Tweets</p>
+		<span>Latest Tweets<br>	@example sit amet consectetur adipiscing.      http://ax.by/zzzzPosted 3 days ago.
+     @example sit amet consectetur adipiscing. http://cx.dy/zzzz
+     Posted 3 days ago.</span>
+	 </div>
+ </div>
+ <div class="end">
+  <p>Copyright &copy 2018.Company name All rights reserved.</p>
+ </div>
+ <script>		
+  (function(){
+	 //查找触发事件元素
+	  var tabs=document.querySelectorAll("ul#tab>li>[data-click=tab]");
+	 //绑定事件处理函数
+	   var zIndex=10;
+		 for(var tab of tabs){
+		    tab.onclick=function(){
+				  var tab=this;
+					var id=tab.getAttribute("data-div");
+					var div=document.getElementById(id);
+					div.style.zIndex=zIndex;
+					zIndex++;
+				}
+		 }
+	 //查找修改元素
+	 //修改元素
+	 
+	})()
+ </script>
+ <script src="js/jquery-1.11.3.js"></script>
+ <script>	
+  $("ul#tab").click(function(e){
+	  var $a=$(e.target);
+		if($a.is("[data-click=tab]")){
+		 $a.parent().addClass("active")
+		  .siblings().removeClass("active")
+		}
+	})
+ </script>
+ <!--二级导航栏js-->
+<script>
+    window.onload = function() {
+    var oUl = document.getElementById('menu');
+    var aLi = oUl.getElementsByTagName('li');
+    var aDiv = oUl.getElementsByTagName('div');
+    var timer = null;
+    for (var i = 0; i < aLi.length; i++) {
+    var oA = aLi[i].getElementsByTagName('a')[0];
+    oA.index = i;
+    clearTimeout(timer);
+    oA.onmouseover = function() {
+    this.className = 'hover';
+    aDiv[this.index].style.display = 'block';
+}
+oA.onmouseout = function() {
+    this.className = '';
+    n = this.index;
+    timer = setTimeout(function() {
+    aDiv[n].style.display = 'none';
+}, 200);
+}
+aDiv[i].onmouseover = function() {
+    clearTimeout(timer);
+    this.style.display = 'block';
+}
+aDiv[i].onmouseout = function() {
+    this.style.display = 'none';
+}
+}
+}
+ </script>
+
+<script>
+          window.onload = function(){
+              var lay = getId("lay"),
+                  smallImg = getId("smallImg"),
+                 bigImg = getId("bigImg");
+              var imgB = bigImg.children[0]; //大图中的图片
+              var scale = 4;        //缩放倍数  可调整
+              var w = smallImg.offsetWidth; //小图的宽高
+              var h = smallImg.offsetHeight;
+              lay.style.width = w / scale + "px";
+              lay.style.height = h / scale + "px";
+  
+              imgB.style.width = w * scale + "px";
+              imgB.style.height = h * scale + "px";
+             smallImg.onmouseover = function(){
+                  lay.style.display = "block";
+                  bigImg.style.display = "block";
+              }    
+              smallImg.onmouseout = function(){
+                  lay.style.display = "none";
+                  bigImg.style.display = "none";
+              }
+              smallImg.onmousemove = function(e){
+                  e = e || window.event;
+                  var x = e.clientX - lay.offsetWidth/2;
+                  var y = e.clientY - lay.offsetHeight/2;
+                  if(x <= 0){ //左侧边界判断
+                     x = 0;
+                  }
+                  if(y <= 0){//顶部边界判断
+                      y = 0;
+                 }
+                if(x >= smallImg.offsetWidth - lay.offsetWidth ){
+                      x = smallImg.offsetWidth - lay.offsetWidth        //右侧边界判断
+                  }
+                  if(y >= smallImg.offsetHeight - lay.offsetHeight ){
+                      y = smallImg.offsetHeight - lay.offsetHeight        //底部边界判断
+                  }
+                  lay.style.left = x + "px";
+                  lay.style.top = y + "px";
+                imgB.style.left = -x*scale + "px";    //图片默认位置为0 0左上角位置 需要反向才能两者相对显示
+                 imgB.style.top = -y*scale + "px";
+              }    
+          }
+          function getId(id){
+             return document.getElementById(id);
+         }
+     </script>
+
+	 <script>  
+$('#prom img').mouseover(function (){       
+        var that = $(this);
+        //当鼠标移动到小图上的时候，获取到当前小图的图片地址
+        var newUrl = that.attr('src');
+        //改变大图的图片地址为当前小图的图片地址
+        $('#m-img').attr('src',newUrl);
+        //我们可以同时改变当前所在的小图的透明度，但在此之前，我们可以先设置所有的小图的透明，做到清除上一个被选中的小图的透明度
+        $('.my-smaller').css('opacity',0.4);
+        //改变当前所在小图的透明度，做到被选中的效果
+        that.css('opacity',1);
+    });
+	   
+</script>
+ </body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> new document </title>
+  <meta charset="UTF-8">
+	<link rel="stylesheet" href="lunbo.css">
+	<link rel="stylesheet" href="footer.css">
+	<style>
+	 *{margin:0; padding:0;}
+	  .header{
+	     width:1420px;
+		   position:relative;
+		 }
+		    a{
+    color: #000;
+    text-decoration: none;
+    }
+    ul {
+    padding:10px;
+    list-style: none;
+    }
+    #menu {
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px snow;
+    }
+    #menu li {
+    float: left;
+    margin-top: 30px;
+		margin-left:35px;
+    line-height: 22px;
+    padding: 0;
+    position: relative;
+    }
+    #menu li a {
+    padding: 10px 15px;
+    display: inline-block;
+    }
+    #menu li .hover {
+    background: #fff;
+    opacity: 0.5;
+    color: gray;
+    border-radius: 5px;
+    }
+    #menu li .lis {
+    width: 100px;
+    height: 300px;
+    line-height: 40px;
+    border-radius: 5px;
+    background: lightblue;
+    position: absolute;
+    top: 40px;
+    }
+    #menu li .lis a {
+    padding: 0 10px;
+    background: none;
+    opacity: 1;
+    color: #fff;
+    }
+    #menu li .lis a:hover {
+    text-decoration: underline;
+    }
+		 .logo img{
+		  margin-top:20px;
+			margin-left:60px;
+		 }
+		  .header-right{
+			  margin-left:800px;
+			}
+			 .header-right button{
+			  width:60px;height:38px;
+				margin-top:30px;
+				margin-right:180px;
+			}
+			 .header-right .gs{
+			  margin-top:20px;
+				margin-right:90px;
+				width:50px;
+				height:50px;
+			}
+		 .header-right .input{
+			 position:absolute;
+			  width:300px;
+				padding:10px;
+				right:260px;
+				top:50px;
+			}
+		  .header-right li{
+			list-style:none;
+			padding:20px;
+			position:absolute;
+			top:-5px;
+			right:10px;
+		 }
+		  .header-into{
+		   position:absolute;
+			 border:1px solid green;
+			 border-radius:5px;
+			 line-height:30px;
+			 height:35px;
+			 top:45px;
+			 right:10px;
+			 color:#ddd;
+		 }
+      .header-into a{
+		   text-decoration:none;
+			 color:#f00;
+			 margin-top:20px;
+		 }
+		 table{
+		  border:1px solid #000;
+			width:1200px;
+			height:600px;
+			margin:0 auto;
+			padding:20px;	
+		 }
+		 td,th{border:1px solid black;
+		   text-align:center;
+		 }
+		 button{
+		  width:30px;
+			height:30px;
+		 }
+		  /*#nav{
+            width:100%;
+            height: 40px;
+            background: #000;
+        }*/
+	</style>
+<body>
+<!-- 导航 -->
+ <div class="header">
+   <div>
+        <ul id = "menu">
+       <li>
+         <a href ="01-666升级版.html" >FOR HIM</a>
+       <div class ="lis" style ="display:none;">
+         <a href = "javascript:;">FOR ONE</a >
+         <a href = "javascript:;">FOR TWO</a>
+         <a href="javascript:;">FOR THREE</a>
+				 <a href="javascript:;">FOR FOUR</a>
+				 <a href="javascript:;">FOR FIVE</a>
+       </div>
+       </li>
+       <li>
+         <a href="04_shoes.html">FOR HEM</a>
+       <div class="lis" style="display:none;">
+         <a href="javascript:;">FOR HIM</a>
+         <a href="javascript:;">FOR SHE</a>
+         <a href="javascript:;">FOR PPP</a>
+				 <a href="javascript:;">LOOK HTML5</a>
+         <a href="javascript:;">LOOK Jquery</a>
+       </div>
+       </li>
+       <li>
+         <a href="product.html">LOOK BOOK</a>
+       <div class="lis" style="display:none;">
+         <a href="javascript:;">LOOK JS</a>
+         <a href="javascript:;">LOOK Css3</a>
+         <a href="javascript:;">LOOK HTML5</a>
+         <a href="javascript:;">LOOK Jquery</a>
+       </div>
+       </li>
+			  <li>
+         <a href="product.html">ABOUT US</a>
+       <div class="lis" style="display:none;">
+         <a href="javascript:;">LOOK JS</a>
+				 <a href="javascript:;">LOOK HTML5</a>
+         <a href="javascript:;">LOOK Jquery</a>
+       </div>
+       </li>
+       </ul>
+     </div>
+	<div class="logo">
+   <img src="images/logo-dark.png" alt="">
+	</div>
+	<div class="header-right">
+		<ul>
+			<li>
+			  <a href="#"><input class="input" type="text" placeholder="请输入要搜索的内容" width="100" height="20"></a>
+				<button>搜索</button>
+			</li>
+			<li>
+			  <a href="#"><img class="gs" src="images/shop_car.png" alt="" title="购物车"></a>
+			</li>
+	</ul>
+		</div>
+		<div class="header-into">
+			<a href="insert.html" title="登陆">登陆</a> /
+			<a href="#" title="注册">注册</a>
+  	</div>
+</div>
+<hr>
+<!--购物车 -->
+ <table id="data">
+ <thead>
+  <tr>
+  	<th>商品名称</th>
+  	<th>单价</th>
+  	<th>数量</th>
+  	<th>小计</th>
+  </tr>
+	<thead>
+	<tbody>
+  <tr>
+  	<td><img src="img/pi1.jpg" alt="">华为</td>
+  	<td>¥6488.00</td>
+  	<td>
+		 <button>-</button>
+		 <span>1</span>
+		 <button>+</button>
+		</td>
+  	<td>¥6488.00</td>
+  </tr>
+  <tr>
+  	<td><img src="img/pi2.jpg" alt="">小米</td>
+  	<td>¥4488.00</td>
+  	<td>
+		<button>-</button>
+		 <span>1</span>
+		 <button>+</button>
+		</td>
+  	<td>¥4488.00</td>
+  </tr>
+	<tr>
+  	<td><img src="img/pi3.jpg" alt="">da米</td>
+  	<td>¥4488.00</td>
+  	<td>
+		<button>-</button>
+		 <span>1</span>
+		 <button>+</button>
+		</td>
+  	<td>¥4488.00</td>
+  </tr>
+  <tr>
+  	<td><img src="img/pi1.jpg" alt="">耐克</td>
+  	<td>¥2488.00</td>
+  	<td>
+		<button>-</button>
+		 <span>1</span>
+		 <button>+</button>
+		</td>
+  	<td>¥2488.00</td>
+  </tr>
+	</tbody>
+	<tfoot>
+	 <tr>
+  	<td colspan="3">总计</td>
+  	<td>付款¥2488.00</td>
+  </tr>
+	</tfoot>
+ </table>
+<!--版权-->
+ <div class="ft">
+   <div class="ft-1">
+	  <p>Some More</p>
+		<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed ligula ac metus finibus hendrerit sed at libero. Praesent blandit dignissim elit, vel feugiat nulla porta a. Praesent tellus eros, consectetur quis tortor at, tempor varius quam.</span>
+	 </div>
+	 <div class="ft-2">
+	  <p>Some More</p>
+		<img src="images/169x169_10.jpg" alt="">
+     <img src="images/169x169_11.jpg" alt="">
+     <img src="images/169x169_12.jpg" alt="">
+     <img src="images/169x169_13.jpg" alt="">
+     <img src="images/169x169_5.jpg" alt="">
+     <img src="images/169x169_6.jpg" alt="">
+	 </div>
+	 <div class="ft-3">
+	  <p>Latest Tweets</p>
+		<span>Latest Tweets<br>	@example sit amet consectetur adipiscing.      http://ax.by/zzzzPosted 3 days ago.
+     @example sit amet consectetur adipiscing. http://cx.dy/zzzz
+     Posted 3 days ago.</span>
+	 </div>
+ </div>
+ <div class="end">
+  <p>Copyright &copy 2018.Company name All rights reserved.</p>
+ </div>
+ <script>
+   var table=document.getElementById("data");
+	 var btns=table.getElementsByTagName("button");
+   for(var btn of btns){
+     btn.onclick=function(){
+			 var btn=this;
+		  var span=btn.parentNode.children[1];
+      var n=parseInt(span.innerHTML);
+			if(btn.innerHTML=="+"){
+			 n++;
+			}else if(n>1){
+			 n--;
+			}
+			span.innerHTML=n;
+			 //二，数量变化，计算小计
+			 //小计=单价*数量n
+			 var td=btn.parentNode.previousElementSibling;
+			 var price=parseFloat(td.innerHTML.slice(1));
+			 var sum=price*n;
+			 td.parentNode.children[3].innerHTML="￥"+sum.toFixed(2);
+       var tds=table.querySelectorAll("tbody td:last-child");
+			 var total=0;
+			 for(var td of tds){
+			  total+=parseFloat(td.innerHTML.slice(1));
+			 }
+			 table.querySelector("tfoot td:last-child").innerHTML=`￥${total.toFixed(2)}`;
+		 }
+	 }
+ </script>
+ </body>
+</html>
+ <script>
+  //查找触发事件的父级元素
+   var onav=document.getElementById("nav");
+	 //获得导航栏里所有li
+	 var alis=onav.querySelectorAll("li");
+	 for(var i=0;i<alis.length;i++){
+	    alis[i].onmouseover=function(){
+			 var a=this.children[0];
+			 a.className="active";
+			 //将二级导航显示
+			 //获取ul 判断是否存在ul，若存在则显示ul
+			 var ul=this.children[1];
+			 if(ul){
+			  ul.style.display="block";}
+			 }
+			 //鼠标移除的时候将a标签的颜色移除
+			 alis[i].onmouseout=function(){
+			  //给a标签去除active
+				var a=this.children[0];
+				a.className="";
+				//将二级导航隐藏
+				var ul=this.children[1];
+				if(ul){
+					ul.style.display="none";
+				console.log(111);
+			 }
+			}
+	 }
+	 </script>

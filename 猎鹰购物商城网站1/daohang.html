@@ -1,0 +1,329 @@
+<!--  <!DOCTYPE html>
+<html>
+<head >
+<meta charset="utf-8">
+<title>鼠标悬浮菜单出现二级菜单</title >
+<style>
+    a{
+    color: #fff;
+    text-decoration: none;
+    }
+    ul {
+    margin: 0;
+    list-style: none;
+    }
+    #menu {
+    width: 500px;
+    height: 60px;
+    background: slategray;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px snow;
+    }
+    #menu li {
+    float: left;
+    margin-top: 10px;
+    line-height: 22px;
+    padding: 0;
+    position: relative;
+    }
+    #menu li a {
+    padding: 10px 20px;
+    display: inline-block;
+    }
+    #menu li .hover {
+    background: #fff;
+    opacity: 0.5;
+    color: gray;
+    border-radius: 5px;
+    }
+    #menu li .lis {
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    background: lightblue;
+    position: absolute;
+    top: 70px;
+    }
+    #menu li .lis a {
+    padding: 0 10px;
+    background: none;
+    opacity: 1;
+    color: #fff;
+    }
+    #menu li .lis a:hover {
+    text-decoration: underline;
+    }
+</style>
+<script>
+    window.onload = function() {
+    var oUl = document.getElementById('menu');
+    var aLi = oUl.getElementsByTagName('li');
+    var aDiv = oUl.getElementsByTagName('div');
+    var timer = null;
+    for (var i = 0; i < aLi.length; i++) {
+    var oA = aLi[i].getElementsByTagName('a')[0];
+    oA.index = i;
+    clearTimeout(timer);
+    oA.onmouseover = function() {
+    this.className = 'hover';
+    aDiv[this.index].style.display = 'block';
+}
+oA.onmouseout = function() {
+    this.className = '';
+    n = this.index;
+    timer = setTimeout(function() {
+    aDiv[n].style.display = 'none';
+}, 200);
+}
+aDiv[i].onmouseover = function() {
+    clearTimeout(timer);
+    this.style.display = 'block';
+}
+aDiv[i].onmouseout = function() {
+    this.style.display = 'none';
+}
+}
+}
+</script>
+</head>
+<body>
+<div>
+<ul id = "menu">
+<li>
+<a href ="01-666升级版.html" >FOR HIM</a>
+<div class ="lis" style ="display:none;">
+<a href = "javascript:;">FOR ONE</a >
+<a href = "javascript:;">FOR TWO</a>
+<a href="javascript:;">FOR THREE</a>
+</div>
+</li>
+<li>
+<a href="04_shoes.html">FOR HEM</a>
+<div class="lis" style="display:none;">
+<a href="javascript:;">FOR HIM</a>
+<a href="javascript:;">FOR SHE</a>
+<a href="javascript:;">FOR PPP</a>
+</div>
+</li>
+<li>
+<a href="product.html">LOOK BOOK</a>
+<div class="lis" style="display:none;">
+<a href="javascript:;">LOOK JS</a>
+<a href="javascript:;">LOOK Css3</a>
+<a href="javascript:;">LOOK HTML5</a>
+<a href="javascript:;">LOOK Jquery</a>
+</div>
+</li>
+</ul>
+</div>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> new document </title>
+  <meta charset="UTF-8">
+	<link rel="stylesheet" href="lunbo.css">
+   <style>
+	   *{margin:0;padding:0;
+		  box-sizing:border-box;
+		 }
+		 .container{
+		   width:1420px;height:2330px;
+			 margin:0 auto;
+		 }
+		 .header{
+		   position:relative;
+		 }
+		  .container .header-left a{
+			 text-decoration:none;
+			 display:inline-block;
+			}
+			.container .header-left .dropdown-menu{
+			width:200px;height:0;
+			opacity:0;
+			overflow:hidden;
+			list-style:none; margin:0; padding:0;
+			border:1px solid #aaa;
+			box-shadow:5px 5px 6px #000;
+			transition:all 0.5s linear;
+		}
+		 .container .dropdown-menu a{padding:6px 20px; width:160px;
+		             
+		}
+		.container .dropdown-menu li:hover{background:#ddd}
+		 /*.container .header .header-left li{
+		  position:relative;
+		  float:left;
+			list-style:none;
+			margin-top:40px;
+		 }<li>
+						  <li><a href="#">Action</a></li>
+             <li><a href="#">Another action</a></li>
+             <li><a href="#">Something else here</a></li>
+						</li>
+						<li>
+						  <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+						</li>
+     .container .header .header-left li a{
+		   text-decoration:none;
+			 padding: 15px;
+			 margin-top:50px;
+			 margin-left:70px;
+			 font-size:16px;
+			 color:#000;
+		 }*/
+		 /* .lx p{
+			 border:1px solid #000;
+			 width:100px;
+			 height:30px;
+			 text-align:center;
+			 line-height:25px;
+			 background:green;
+			}
+			.lx p:hover{
+			 background:purple;
+			}*/
+
+			.lx rect {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-dasharray: 422, 0;
+}
+
+.lx:hover {
+  background: rgba(225, 51, 45, 0);
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.lx:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+          transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}   
+
+
+    .clearfix:after{content: ''; display: block; clear: both;}
+        *{margin: 0; padding: 0;}
+        ul, ol{list-style: none;}
+        a{text-decoration: none; cursor: pointer;}
+        nav{position: fixed; box-sizing: border-box; width: 100%; padding:12px; background: #fdf5e6;}
+        .topNavBar > ul{float: right;}
+        .topNavBar > ul > li{float: left; margin: 0 16px;}
+				.topNavBar > ul > li > ul{
+  padding: 8px; 
+  position: absolute; 
+  top: 100%;
+  background: white; 
+  white-space: nowrap;
+  box- shadow: 0 0 5px rgb(0, 0, 0, 0.5);
+} 
+   .topNavBar > ul > li. > u{
+            display: none;
+        }    
+        .topNavBar > ul > li.active > ul{
+            display: block;
+        }
+		 </style>
+ </head>
+ <body>
+<!-- 顶部    -->
+ <nav class="clearfix">
+        <div class="topNavBar">
+            <ul class="clearfix">
+                <li>
+                    <a>主页</a>
+										<ul>
+                        <li>javascript</li>
+                        <li>html</li>
+                        <li>css</li>
+                    </ul>
+                </li>
+                <li>
+                    <a>介绍</a>
+										<ul>
+                        <li>javascript</li>
+                        <li>html</li>
+                        <li>css</li>
+                    </ul>
+                </li>
+                <li>
+                    <a>技能</a>
+										<ul>
+                        <li>javascript</li>
+                        <li>html</li>
+                        <li>css</li>
+                    </ul>
+                </li>
+                <li>
+                    <a>关于</a>
+										<ul>
+                        <li>javascript</li>
+                        <li>html</li>
+                        <li>css</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+
+   <div class="hao"></div>
+
+  <div class="lx">
+	<p>登陆</p>
+	<p>登陆</p>
+	<p>登陆</p>
+	</div>
+   <div class="container">
+		   <div class="header-left">
+			  <a data-trigger="dropdown" href="#">FOR HIM</a>
+         <a data-trigger="dropdown" href="#">FOR HEM</a>
+		    <a data-trigger="dropdown" href="#">LOOK BOOK</a> 
+			    <ul class="dropdown-menu">
+					  <li>
+						  <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+						</li>
+					</ul>
+			 </div>
+			 <script src="js/jquery-1.11.3.js"></script>
+			 <script>
+			  var $btn=$("[data-trigger=dropdown]");
+				 $btn.click(function(e){
+				   e.stopPropagation();
+					 $(this).next().css({height:155,opacity:1});
+				 })
+				 $(window).click(function(e){
+				  var $tar=$(e.target);
+					$(".dropdown-menu").css({height:0,opacity:0});
+				 })
+			 </script>
+
+			 <script>
+    let liTags = document.querySelectorAll(".topNavBar > ul > li");
+    for (let i=0; i<liTags.length; i++){
+        liTags[i].onmouseenter = function (e) {
+            let li = e.currentTarget;
+            li.classList.add("active");
+        }
+        liTags[i].onmouseleave = function (e) {
+            let li = e.currentTarget;
+            li.classList.remove("active");
+        }
+    }
+</script>
+ </body>
+</html>

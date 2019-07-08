@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+  <head>
+     <title>mmh</title>
+	 <meta charset="UTF-8">
+  </head>
+  <body onload="selectUser()">
+    <div id="a1"></div>
+	<script>
+	function selectUser(){
+	  var xhr=new XMLHttpRequest();
+	  xhr.onreadystatechange=function(){
+	    if(xhr.readyState==4&&xhr.status==200){
+		  var result=xhr.responseText;
+		  //把接受的json转换为js对象数组
+		  var arr=JSON.parse(result);
+		  var html="";
+		  html+=`<table border="1px">
+		    <tr>
+			  <th>名称</th>
+			  <th>电子邮箱</th>
+			  <th>联系方式</th>
+			  <th>用户姓名</th>
+			  <th>用户性别</th>
+			  <th>操作</th>
+			</tr>
+		  `;
+		   for(i=0;i<arr.length;i++){
+			   console.log(arr[i].uid);
+			    var show_g="";
+				if(arr[i].gender==1){
+				  show_g="男";
+				}else if(arr[i].gender==0){
+				  show_g="女";
+				}else{
+				  show_g="null";
+				}
+				
+		     html+=`
+			  <tr>
+			  <td>${arr[i].uname}</td>
+              <td>${arr[i].email}</td>
+			  <td>${arr[i].phone}</td>
+			  <td>${arr[i].user_name}</td>
+			  <td>${show_g}</td>
+			  <td>
+			    <a href="javascript:deleteUser(${arr[i].uid})">删除</a>
+                 <a href="#">修改</a>
+			  </td>
+			  </tr>
+			 `;
+		   }
+		    //html+=`<table>`;
+			a1.innerHTML=html;
+		}
+	  } 
+	    //var //url="/user/select?uname="+uname.value+"&email="+email.value+"&phone="+phone.value+"&user_name="+user_name.value+"&gender="+gend//er.value;
+	       xhr.open("get","/user/select",true);
+		   xhr.send();
+	}
+	  function deleteUser(uid){
+		   //var urlParams=new URLSearchParams(location.search);
+		  // var uid=urlParams.get("uid");
+			console.log(uid);
+		   //console.log(111);
+	    var xhr=new XMLHttpRequest();
+		// xhr.onreadystatechange=function(){
+			 xhr.onreadystatechange=function(){
+			// console.log(xhr.readyState);
+                 // console.log(xhr.status==200);
+		  if(xhr.readyState==4&&xhr.status==200){
+		    var result=xhr.responseText;
+			if(result==1){
+			alert("删除成功");
+			 selectUser();
+			}else{
+			  alert("删除失败");
+			}
+		  }
+		}
+		 var url="/user/delete?uid="+uid;
+		 xhr.open("get",url,true);
+		 xhr.send();
+	  } 
+	</script>
+  </body>
+</html>

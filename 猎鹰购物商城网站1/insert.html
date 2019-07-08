@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> new document </title>
+  <meta charset="UTF-8">
+   <style>
+	   *{margin:0;padding:0;list-style: none;}
+		 a{
+		   text-decoration: none;
+		 }
+	    .container{
+		  width:430px;height:330px;
+			border:2px solid #fff;
+			margin:10px auto;
+	    padding:20px;
+			margin-top:150px;
+		 }
+		 #uname,#upwd{
+		  width:360px;height:10px;
+			margin:10px;
+			padding:15px;
+		 }
+		 #num{
+		  width:130px;height:10px;
+			margin-left:10px;
+			margin-top:10px;
+			padding:15px;
+		 }
+		  .code img{
+			 position:absolute;
+			 top:420px;
+			 left:690px;
+			}
+			.code span{
+			 position:absolute;
+			 top:425px;
+			 left:781px;
+			}
+			.label input{
+			 margin-top:30px;
+			 margin-left:10px;
+			 width:200px;height:10px;
+			 padding:15px;
+			}
+			.label{
+			 margin-top:-10px;
+
+			}
+			.label a{
+			 float:left;
+			 width:100px;height:33px;
+			 padding:6px 12px;
+			 text-decoration:none;
+			 display: inline-block;
+			 background-image:linear-gradient(to bottom, #4b95ff 0px,  #4b95ff 100px);
+			 margin-top:-47px;
+			 margin-left:280px;
+			 line-height:35px;
+			 text-align:center;
+			 border-radius:5px;
+			}
+			.footer .black{
+			  display:block;
+				width:396px;height:40px;
+				background-color: #4b95ff;
+				border-radius:5px;
+				margin-left:8px;
+				margin-top:15px;
+			}
+			.container .uname{
+			  position: relative;
+			}
+			.container .uname span{
+			  position: absolute;
+				top:20px;
+				right:-85px;
+				color:#f00;
+			}
+			.container .upwd{
+			  position: relative;
+			}
+			.container .upwd span{
+			  position: absolute;
+				top:20px;
+				right:-115px;
+				color:#f00;
+			}
+			.clearfix{
+			  font-size:16px;
+        padding:10px;
+			}
+			
+			.bot .mmh1{
+			 position:relative;
+			 display:inline-block;
+			 padding:15px;
+			 font-size:1px;
+			 margin-left:11px;
+			 margin-top:20px;
+			 background:rgba(255, 255, 255, 0);
+			}
+			.container .bot1{
+			  font-size:1px;
+				margin-top:-18px;
+				margin-left:290px;
+			 }
+	 </style>
+ </head>
+ <body>
+	<div class="container">
+	  <table></table>
+		<div id="mmh">
+		<div class="clearfix">
+		 <a href="#" class="lf">手机注册</a>
+		 <a href="03_email.html" class="rt">&nbsp&nbsp&nbsp&nbsp邮箱注册</a>
+		</div>
+		<div class="uname">
+			 <input type="text" id="uname" onfocus="uname_focus()" placeholder="手机号">
+			 <span id="a1"></span>
+		</div>
+		<div class="upwd">
+			<input type="password" id="upwd" onblur="upwd_blur()" placeholder="密码">
+			<span id="a2"></span>
+		</div>
+		<div>
+			<input type="password" id="upwd" placeholder="确认密码">
+			<span id="a3"></span>
+	 </div>
+		<div class="code">
+	     <input type="text" id="num" placeholder="验证码">
+			 <img src="image/捕获.png" width="81" height="39" border="0" alt="">
+			 <span><a href="#">看不清楚？换一张</a></span>
+	 </div>
+	 <div class="label">
+			<input type="text" placeholder="动态码">
+<!-- 				 <input type="text" placeholder="获取动态码"> -->
+		 <a href="#">获取动态码</a>
+	 </div>
+	</div>
+	<div class="footer">
+		<button class="black" onclick="insert()">注册</button>
+ </div>
+ <div class="bot">
+	 <input type="checkbox" name="hoppy[]" class="mmh1">我已阅读并同意<a href="#">《用户注册协议》</a>
+ </div>
+ <div class="bot1">
+   <p>已有账号？<span><a href="02_userinsert.html">立即登陆</a></span></p>
+ </div>
+ </div>
+ <script>
+ function uname_focus(){
+	 a1.innerHTML="请输入手机号";
+ }
+ function upwd_blur(){
+  if(!upwd.value){
+	 a2.innerHTML="请输入正确的密码";
+	}else{
+	 a2.innerHTML="null";
+	}
+ }
+ function insert(){
+	var xhr=new XMLHttpRequest();
+	xhr.onreadystatechange=function(){
+	 if(xhr.readyState==4&&xhr.status==200){
+		 var result=xhr.responseText;
+		 alert("注册成功");
+	 }
+	}
+	 xhr.open("post","/user/insert",true);
+	 xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+	 var formdata="uname="+uname.value+"&upwd="+upwd.value;
+	 xhr.send(formdata);
+ }
+</script>
+ </body>
+</html>

@@ -1,0 +1,1619 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> new document </title>
+  <meta charset="UTF-8">
+	<link rel="stylesheet" href="lunbo.css">
+   <style>
+	   *{margin:0;padding:0;
+		  box-sizing:border-box;
+		 }
+		 body{
+		  margin:0 auto;
+		 }
+		 .container{
+		   width:100%;height:2330px;
+			 margin:0 auto;
+		 }
+		 .header{
+		  height:120px;
+		   position:relative;
+		 }
+	  *{margin:0;padding: 0;list-style: none;text-decoration: none;}
+    #nav{
+	    position:absolute;
+	     width: 600px;
+		 height: 60px;
+		 color:#000;
+		 top:25px;
+		 left:25px;
+		 padding:15px;
+		 z-index:200;
+		 }
+  #nav ul{background: #aaa;color:#000;}
+  #nav ul li{float:left; display:block; height: 40px; line-height: 40px; padding: 0 20px; position: relative;}
+  #nav ul li:hover{background: #cea;}
+  #nav ul li ul li{float: none;}
+/*关键一：将二级菜单设置为display：none;*/
+  #nav ul li ul{position: absolute;top:40px;left: 0; display: none;height:260px;}
+  #nav ul li ul li:hover{background: red;}
+/*关键二：在划过二级菜单从属的一级菜单时，设置为display:block;*/
+  #nav ul li:hover ul{display: block;}
+		 .container .logo {
+		 position:absolute;
+		  top:32px;
+		 left:620px;
+		 }
+		  .container .header-right{
+			  margin-left:800px;
+			}
+			.container .header-right button{
+			  width:60px;height:35px;
+				margin-top:30px;
+				margin-right:180px;
+			}
+			.container .header-right .gs{
+			  margin-top:20px;
+				margin-right:90px;
+				width:50px;
+				height:50px;
+			}
+			.container .header-right button:last-child{
+			 border-radius:0 5px 5px 0;
+			}
+			.container .header-right .input:first-child{
+			 border-radius:5px 0 0 5px;
+			}
+			.container .header-right .input{
+			 position:absolute;
+			  width:300px;height:35px;
+				padding:10px;
+				right:260px;
+				top:50px;
+			}
+		 .container .header-right li{
+			list-style:none;
+			padding:20px;
+			position:absolute;
+			top:-5px;
+			right:10px;
+		 }
+		 .container .header-into{
+		   position:absolute;
+			 border:1px solid green;
+			 border-radius:5px;
+			 line-height:30px;
+			 height:35px;
+			 top:45px;
+			 right:10px;
+			 color:#ddd;
+		 }
+     .container .header-into a{
+		   text-decoration:none;
+			 color:#f00;
+			 margin-top:20px;
+		 }
+		 /*.container .header-img img{
+			 list-style:none;
+		 }*/
+		  .container .header-one{
+			 height:600px;
+			 border:1px solid #ddd;
+			 position:relative;
+			}
+     .container .header-one .header-one1{
+		   width:48%;
+			 padding:147px 20px 0px 100px;
+			 padding-top:70px;
+			 padding-left:40%;
+			 float:left;
+			 position:absolute;
+		 }
+		 .container .header-one .header-one1 .name{
+		   box-sizing: border-box;
+			 font-size:20px;
+			 color:rgba(0,0,0,0.3);
+			 position:absolute;
+			 top:57px;left:48px;
+		 }
+		 .container .header-one .header-one1 .datlis{
+		   height:5vw;
+       font-size:28px;
+			 color:rgba(0,0,0,0.6);
+       font-weight:100px;
+       line-height:1px;
+       padding:15px;
+			 position:absolute;
+			 top:123px;left:30px;
+			 }
+			 .container .header-one .header-one1 .p1{
+			  font-size:28px;
+				font-weight:100px;
+       line-height:1px;
+       padding:15px;
+			 color:rgba(0,0,0,0.6);
+			 position:absolute;
+			 top:157px;left:30px;
+			 }
+			 .container .header-one .header-one1 a{
+			   text-decoration:none;
+			 }
+			 .container .header-one .header-one1 .view{
+			  position:absolute;
+				top:310px;left:50px;
+				display:block;
+				width:253px;height:60px;
+				text-align:center;
+				line-height:20px;
+				background-image:linear-gradient(to bottom,orange 0%, orange 100%);
+				border-radius:5px;
+				border:1px solid orange;
+			 }
+			 .view {
+  display: inline-block;
+  border-radius: 4px;
+  /*background-color: #f4511e;*/
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.view span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.view:hover span {
+  padding-right: 25px;
+}
+.view span:after {
+  content:'»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.view:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+			 .container .header-one .img{
+			   position:absolute;
+				 bottom:-495px;
+				 left:350px;bottom:30px;;
+			 }
+			 .container .header-one .header-one2{
+		   width:52%;
+			 padding:147px 20px 0px 100px;
+			 padding-top:70px;
+			 padding-left:10%;
+			 float:left;
+			 position:absolute;
+		 }
+		 .container .header-one .header-one2 .name{
+		   box-sizing: border-box;
+			 font-size:20px;
+			 color:rgba(0,0,0,0.3);
+			 position:absolute;
+			 top:57px;left:763px;
+		 }
+		 .container .header-one .header-one2 .datlis{
+		   height:5vw;
+       font-size:28px;
+			 color:rgba(0,0,0,0.6);
+       font-weight:100px;
+       line-height:24px;
+       padding:0px;
+			 position:absolute;
+			 top:160px;left:760px;
+			 }
+			 .container .header-one .header-one2 .p1{
+			  font-size:28px;
+				font-weight:100px;
+       line-height:20px;
+       padding:15px;
+			 color:rgba(0,0,0,0.6);
+			 position:absolute;
+			 top:117px;left:745px;
+			 }
+			 .container .header-one .header-one2 a{
+			   text-decoration:none;
+			 }
+			 .container .header-one .header-one2 .view{
+			  position:absolute;
+				top:310px;left:755px;
+				display:block;
+				width:253px;height:60px;
+				text-align:center;
+				line-height:20px;
+				background-image:linear-gradient(to top,orange 0%, orange 100%);
+				border-radius:5px;
+				
+			 }
+			 .container .header-one .header-one2 .img1{
+			   position:absolute;
+				 bottom:-498px;
+				 left:1030px;
+			 }
+			 .container .section{
+			   width:100%;
+				 position:relative;
+				 border:1px solid #ddd;
+			 }
+       .container .section .desc-1{
+			   height:370px;
+				 position:relative;
+			 }
+			  .container .section .desc-1 .name-1{
+				 font-size: 16px;
+         font-weight: 300;
+         line-height: 1;
+				 color:#999;
+				 position:absolute;
+				 top:50px;
+				 left:30px;
+				} 
+				.container .section .desc-1 .datlis-1{
+				 font-size:24px;
+         font-weight:300px;
+         line-height:1px;
+				 color:#1c1f23;;
+				 position:absolute;
+				 top:100px;
+				 left:30px;
+				} 
+				.container .section .desc-1 a{
+				  text-decoration:none;
+				}
+			 .container .section .desc-1 .view-1{
+			  position:absolute;
+				top:200px;left:35px;
+				display:block;
+				width:183px;height:43px;
+				text-align:center;
+				line-height:40px;
+				background-image:linear-gradient(to bottom,orange 0%, orange 100%);
+				border-radius:5px;
+				border:1px solid #ddd;
+			 }
+			 .container .section .img3{
+			   position:absolute;
+				 top:88px;left:234px;
+				 width:189px;height:189px;
+			 }
+			 .container .section .desc-2{
+			   height:370px;
+				 position:absolute;
+				 bottom:311px;left:484px;
+			 }
+			 .container .section .desc-2 .name-2{
+				 font-size: 16px;
+         font-weight: 300;
+         line-height: 1;
+				 color:#999;
+				 margin-top:362px;
+				} 
+				.container .section .desc-2 .datlis-2{
+				 font-size:24px;
+         font-weight:300px;
+         line-height:1px;
+				 color:#1c1f23;;
+				 margin-top:40px;
+				 margin-right:10px;
+				} 
+				.container .section .desc-2 a{
+				  text-decoration:none;
+				}
+			 .container .section .desc-2 .view-2{
+			  margin-top:100px;
+				display:inline-block;
+				/*position:absolute;*/
+				width:183px;height:43px;
+				text-align:center;
+				line-height:40px;
+				background-image:linear-gradient(to bottom,orange 0%, orange 100%);
+				border-radius:5px;
+				border:1px solid #ddd;
+			  /*transform: skewX(-50deg);*/
+				
+			 }
+			 .container .section .img4{
+			   position:absolute;
+				 top:60px;left:690px;
+				 width:189px;height:189px;
+			 }
+			 .container .section .desc-3{
+			   height:370px;
+				 position:absolute;
+				 top:70px;right:264px;
+			 }
+			 .container .section .desc-3 .name-3{
+				 font-size: 16px;
+         font-weight: 300;
+         line-height: 1;
+				 color:#999;
+				 position:absolute;
+				 top:3px;
+				 left:8px;
+				} 
+				.container .section .desc-3 .datlis-3{
+				 font-size:24px;
+         font-weight:300px;
+         line-height:1px;
+				 color:#1c1f23;; 
+				 margin-top:40px;
+				 left:65px;
+				 padding:5px;
+				} 
+				.container .section .desc-3 a{
+				  text-decoration:none;
+				}
+			 .container .section .desc-3 .view-3{
+			  position:absolute;
+				top:150px;left:16px;
+				display:block;
+				width:183px;height:43px;
+				text-align:center;
+				line-height:40px;
+				background-image:linear-gradient(to bottom,orange 0%, orange 100%);
+				border-radius:5px;
+				border:1px solid #ddd;
+			 }
+			 .container .section .desc-3 .view-3:hover{
+			  background:green;
+			 }
+			 .container .section .img5{
+			   position:absolute;
+				 top:15px;right:80px;
+				 width:189px;height:189px;
+			 }
+			 .container .bg{
+				 height:620px;
+				 position:relative;
+				 background:url(images/bg-4.jpg)no-repeat center fixed;
+				 top:40px;
+				}
+				.container .bg h3{
+				  color:#fff;
+				 font-size: 56px;
+         padding-top:80px;
+         text-align: center;
+         font-weight: 400;
+         font-style: italic;
+         text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.18);
+				}
+      .container .bg .blog-left-agileits {
+    float: left;
+    padding: 15px;
+    width:100px;
+    text-align: center;
+    background: #00cdc1;
+		margin-left:160px;
+		margin-top:60px;
+}
+.container .bg .blog-right-agileits-w3layouts h4 a {
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.container .bg .blog-right-agileits-w3layouts h4 a:hover {
+    opacity: 0.7;
+}
+.blog-right-agileits-w3layouts {
+    float: left;
+    width:356px;;
+    padding: 8px;
+		margin-top:60px;
+    text-align: center;
+		background:rgba(0,0,0,0.1);
+}
+.blog-left-agileits p {
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+
+.blog-left-agileits span {
+    color: #fff;
+    font-size: 23px;
+    text-align: center;
+}
+.blog-right-agileits-w3layouts p a {
+    color: #ff3535;
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 14px;
+    display: inline-block;
+}
+.blog-right-agileits-w3layouts p a:hover {
+    color: #fff;
+}
+.container .bg .blog-left-agileits1 {
+    position:absolute;
+    padding: 15px;
+    width:100px;
+    text-align: center;
+    background: #00cdc1;
+		left:160px;
+		top:340px;
+}
+.container .bg .blog-right-agileits-w3layouts1 h4 a {
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.container .bg .blog-right-agileits-w3layouts1 h4 a:hover {
+    opacity: 0.7;
+}
+.container .bg .blog-right-agileits-w3layouts1 {
+    position:absolute;
+    width:356px;;
+    padding: 8px;
+		top:342px;
+		left:258px;
+    text-align: center;
+		background:rgba(0,0,0,0.1);
+}
+.blog-left-agileits1 p {
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+
+.blog-left-agileits1 span {
+    color: #fff;
+    font-size: 23px;
+    text-align: center;
+}
+.blog-right-agileits-w3layouts1 p a {
+    color: #ff3535;
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 14px;
+    display: inline-block;
+}
+.blog-right-agileits-w3layouts1 p a:hover {
+    color: #fff;
+}
+.container .bg .blog-left-agileits2 {
+    float:left;
+    padding: 15px;
+    width:100px;
+    text-align: center;
+    background: #00cdc1;
+		margin-left:775px;
+		margin-top:50px;
+}
+.container .bg .blog-right-agileits-w3layouts2 h4 a {
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.container .bg .blog-right-agileits-w3layouts1 h4 a:hover {
+    opacity: 0.7;
+}
+.container .bg .blog-right-agileits-w3layouts2 {
+    float:left;
+    width:356px;;
+    padding: 8px;
+		margin-top:50px;
+		left:258px;
+    text-align: center;
+		background:rgba(0,0,0,0.1);
+}
+.blog-left-agileits2 p {
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+
+.blog-left-agileits2 span {
+    color: #fff;
+    font-size: 23px;
+    text-align: center;
+}
+.blog-right-agileits-w3layouts2 p a {
+    color: #ff3535;
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 14px;
+    display: inline-block;
+}
+.blog-right-agileits-w3layouts2 p a:hover {
+    color: #fff;
+}
+ .container .bg .blog-left-agileits3 {
+    position:absolute;
+    padding: 15px;
+    width:100px;
+    text-align: center;
+    background: #00cdc1;
+		left:160px;
+		top:480px;
+}
+.container .bg .blog-right-agileits-w3layouts3 h4 a {
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.container .bg .blog-right-agileits-w3layouts3 h4 a:hover {
+    opacity: 0.7;
+}
+.container .bg .blog-right-agileits-w3layouts3 {
+    position:absolute;
+    width:356px;;
+    padding: 8px;
+		top:482px;
+		left:258px;
+    text-align: center;
+		background:rgba(0,0,0,0.1);
+}
+.blog-left-agileits3 p {
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+
+.blog-left-agileits3 span {
+    color: #fff;
+    font-size: 23px;
+    text-align: center;
+}
+.blog-right-agileits-w3layouts3 p a {
+    color: #ff3535;
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 14px;
+    display: inline-block;
+}
+.blog-right-agileits-w3layouts3 p a:hover {
+    color: #fff;
+}
+  .container .bg .blog-left-agileits4 {
+    float:left;
+    padding: 15px;
+    width:100px;
+    text-align: center;
+    background: #00cdc1;
+		margin-left:775px;
+		margin-top:45px;
+}
+.container .bg .blog-right-agileits-w3layouts4 h4 a {
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.container .bg .blog-right-agileits-w3layouts3 h4 a:hover {
+    opacity: 0.7;
+}
+.container .bg .blog-right-agileits-w3layouts4 {
+   float:left;
+    width:356px;;
+    padding: 8px;
+		margin-left:0px;
+		margin-top:45px;
+    text-align: center;
+		background:rgba(0,0,0,0.1);
+}
+.blog-left-agileits4 p {
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+
+.blog-left-agileits4 span {
+    color: #fff;
+    font-size: 23px;
+    text-align: center;
+}
+.blog-right-agileits-w3layouts4 p a {
+    color: #ff3535;
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 14px;
+    display: inline-block;
+}
+.blog-right-agileits-w3layouts4 p a:hover {
+    color: #fff;
+}
+		  .footer{
+			 width:100%;
+			 margin:0 auto;
+			 margin-top:200px;
+			}
+		 .footer .foot{
+				 width:330px;height:544px;
+				 position:relative;
+         top:100px;left:30px;
+				}
+	   .footers{
+		  width:100%;height:650px;
+			position:relative;
+			top:50px;
+			left:0px;
+			padding:0;
+			margin:0 auto;
+		 }
+		 .footers .warp{
+		  position:absolute;
+			width:393px;
+			height:191px;
+			bottom:0px;
+			padding:10px;
+		 }
+		 .footers .mask{
+		  position:absolute;
+			width:393px;
+			height:191px;
+			background:rgba(101,101,101,0.6);
+			color:#ffffff;
+			opacity:0;
+			left:500px;
+			transform:translateY(-265px);
+		 }
+		 .mask span{
+		  text-align:center;
+			line-height:10px;
+		 }
+		 .warp :hover .mask{
+		  opacity:1;
+		 }
+		  .footers .m{
+			 margin-left:90px;
+			 margin-top:80px;
+			}
+		 .footers .m img{
+		  padding:15px 20px;
+			position:relative;
+			left:-24px;
+			top:-15px;
+		 }
+		 .view2{
+     width:169px;
+     height:169px;
+     color:green;
+     border:2px solid currentColor;
+     background:pink; 
+    }
+    .border-radius:hover {
+       top: 5px;
+       box-shadow: 0 0 15px #AAA;/*模糊值为15px的#AAA色的盒阴影*/
+     }
+    .main {
+       width: 880px;
+       border: 1px solid #ccc;
+       height: 440px;
+       margin: 0 auto;
+    }
+		 .view2 {
+            width: 169px;
+            height: 169px;
+            overflow: hidden;
+            position: relative;
+            margin: 5px;
+            float: left;
+        }
+        .hover {
+            width: 200px;
+            background: rgba(0, 0,0,0.5);
+            position: absolute;
+            top:20px;
+            left: 0;
+            text-align: center;
+            color: #fff;
+            transform: rotate(55deg);/*变形：旋转55度*/
+            -webkit-transform: rotate(55deg);
+            transition: all 0.5s;/*过渡：所有属性都改变，时长0.5s*/
+            -webkit-transition: all 0.5s;
+            overflow: hidden;
+            height: 0;
+            z-index: 4000; /*设置元素的堆叠顺序，属性值越大，该元素层离用户越近*/
+        }
+         .hover h3 {
+                color: #fff;
+                border-bottom: 5px solid rgba(76, 179,77, 0.5);
+                padding-bottom: 10px;
+            }
+        .view2:hover .hover {
+            height: 220px;
+            transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+        }
+        /*before   after为选择器，一般给选择器加动画背景，设置动画样式*/
+        .view2:before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            right: 0;
+            width: 60px;
+            height: 60px;
+            background: rgba( 133, 203,190,0.5);
+            transform: rotate(55deg) translateX(60px);/*变形：旋转55度，水平（向右）移动60px*/
+            -webkit-transform: rotate(55deg) translateX(60px);
+            transform-origin: 100% 0%;/*设置元素变形起始点*/
+            -webkit-transform-origin: 100% 0%;
+            transition: all 0.5s ease 0.3s;/*过渡动画：所有属性都改变，时长0.5s,速率逐渐变慢，延迟0.3s*/
+            -webkit-transition: all 0.5s ease 0.3s;
+        }
+        /*写好样式，进行隐藏，用top:-240px;*/
+        .view2:hover:before {
+            top: 0;
+        }
+        .view2:after {
+            content: "";
+            position: absolute;
+            bottom: -240px;
+            left: 0;
+            width: 360px;
+            height: 360px;
+            background: rgba( 133, 203,190,0.5);
+            transform: rotate(55deg) translateX(-60px);
+            -webkit-transform: rotate(55deg) translateX(-60px);
+            transform-origin: 0% 100%;
+            -webkit-transform-origin: 0% 100%;
+            transition: all 0.5s ease 0.3s;
+            -webkit-transition: all 0.5s ease 0.3s;
+        }
+        .view2:hover:after {
+            bottom: 0px;
+        }
+     .footers .m2 img{
+		  width:393px;
+			height:191px;
+		  position:absolute;
+			top:-255px;
+			left:500px;
+		 }
+		 .footers .m2 span{
+		  position:absolute;
+			font-size:26px;
+			color:#fff;
+			top:50px;
+			left:120px;
+			text-decoration:underline;
+		 }
+		 .footers .m2 p{
+		   position:absolute;
+			font-size:18px;
+			color:#fff;
+			top:100px;
+			left:60px;
+		 }
+		 .footers .m3{
+		  position:absolute;
+			top:390px;
+			left:73px;
+			padding:15px;
+		 }
+		 .footers .m3 img{
+		  margin-top:-19px;
+			margin-left:-25px;
+		 }
+		 .footers .m7{
+		  position:absolute;
+			top:215px;
+			left:280px;
+			width: 169px;
+			height: 169px;
+			overflow: hidden;
+		 }
+		 .footers .m7 img{
+		  cursor:pointer;
+			transition: all 0.6s;
+		 }
+		 .footers .m7 img:hover{
+		  transform:scale(1.4);
+		 }
+		 .footers .m4{
+		  position:absolute;
+			top:215px;
+			left:100px;
+			width: 169px;
+			height: 169px;
+			overflow: hidden;
+		 }
+		 .footers .m4 img{
+		  cursor:pointer;
+			transition: all 0.6s;
+		 }
+		 .footers .m4 img:hover{
+		  transform:scale(1.4);
+		 }
+		 .footers .m5{
+		  position:absolute;
+			top:215px;
+			left:976px;
+			width: 169px;
+			height: 169px;
+			overflow: hidden;
+		 }
+		 .footers .m5 img{
+		  cursor:pointer;
+			transition: all 0.6s;
+		 }
+		 .footers .m5 img:hover{
+		  transform:scale(1.4);
+		 }
+		 .footers .m6{
+		  position:absolute;
+			top:225px;
+			right:95px;
+			width: 169px;
+			height: 169px;
+			overflow: hidden;
+		 }
+		 .footers .m6 img{
+		  cursor:pointer;
+			transition: all 0.6s;
+		 }
+		 .footers .m6 img:hover{
+		  transform:scale(1.4);
+		 }
+		 .give{
+		  width:100%;
+			height:800px;
+			position:relative;
+			margin:0 auto;
+		 }
+		 .give span{
+		  font-style:italic;
+			font-size:56px;
+			margin-left:500px;
+		 }
+		 .give .give_1 .f1{
+		   width:400px;
+			 height:40px;
+			 margin-top:60px;
+			 margin-left:100px;
+			 padding:15px;
+		 }
+		 .give .give_1 .f2{
+		   width:400px;
+			 height:40px;
+			 margin-top:60px;
+			 margin-left:60px;
+			 padding:15px;
+		 }
+		 .give .give_2 .f1{
+		   width:400px;
+			 height:40px;
+			 margin-top:60px;
+			 margin-left:100px;
+			 padding:15px;
+		 }
+		 .give .give_2 .f2{
+		   width:400px;
+			 height:40px;
+			 margin-top:60px;
+			 margin-left:60px;
+			 padding:15px;
+		 }
+		 .give .give_3 .f1{
+		   width:865px;
+			 height:300px;
+			 margin-top:60px;
+			 margin-left:100px;
+			 padding:15px;
+		 }
+		 .give .f4{
+		  width:143px;
+			height:46px;
+			text-align:center;
+			line-height:40px;
+			background-color:#f00;
+			margin-top:20px;
+			margin-left:99px;
+		 }
+		 .give .address{
+		  position:absolute;
+			top:140px;
+			left:1050px;
+		 }
+		 .give .address P{
+		  font-size:30px;
+			color:#00cdc1;
+			margin-top:-35px;
+			margin-left:30px;
+		 }
+		 .give .address span{
+		  font-size:14px;
+			color:#999;
+			 position:absolute;
+		  top:40px;
+			left:-500px;
+		 }
+		  .give .address2{
+		  position:absolute;
+			width:141px;height:259px;
+			top:260px;
+			left:1050px;
+		 }
+		 .give .address2 img{
+		  margin-top:40px;
+			margin-left:-25px;
+			width:60px;
+			height:60px;
+		 }
+		 .give .address2 P{
+		  font-size:30px;
+			color:#00cdc1;
+			margin-top:-55px;
+			margin-left:30px;
+		 }
+		 .give .address2 span{
+		  font-size:14px;
+			color:#999;
+			position:absolute;
+		  top:300px;
+			left:-500px;
+		 }
+		 .give .address3{
+		  position:absolute;
+			top:260px;
+			left:1050px;
+		 }
+		 .give .address3 img{
+		  margin-top:230px;
+			margin-left:-5px;
+			width:30px;
+			height:30px;
+		 }
+		 .give .address3 P{
+		  font-size:30px;
+			color:#00cdc1;
+			margin-top:-45px;
+			margin-left:35px;
+		 }
+		 .give .address3 span{
+		  font-size:14px;
+			color:#999;
+			position:absolute;
+		  top:110px;
+			left:-500px;
+		 }
+		 .ft{
+		  width:100%;
+			height:350px;
+			background:#aaa;
+			position:relative;
+			margin:0 auto;
+		 }
+		 .ft .ft-1{
+		  position:absolute;
+			width:450px;
+			top:30px;
+			left:60px;
+		 }
+		 .ft .ft-1 p{
+		  font-size:30px;
+			color:#fff;
+			margin-bottom:20px;
+		 }
+		 .ft .ft-1 span{
+		  color:#fff;
+		 }
+		 .ft .ft-2{
+		  position:absolute;
+			width:450px;
+			top:10px;
+			left:550px;
+		 }
+		 .ft .ft-2 p{
+		  font-size:30px;
+			color:#fff;
+			margin-bottom:20px;
+		 }
+		 .ft .ft-2 img{
+		  width:110px;
+			height:110px;
+		 }
+		  .ft .ft-3{
+		  position:absolute;
+			width:450px;
+			top:30px;
+			left:950px;
+		 }
+		 .ft .ft-3 p{
+		  font-size:30px;
+			color:#fff;
+			margin-bottom:20px;
+		 }
+		 .ft .ft-3 span{
+		  color:#fff;
+		 }
+     .end{
+		  width:100%;
+			height:60px;
+			background:#000;
+			margin:0 auto;
+		 }
+		 .end p{
+		  text-align:center;
+			line-height:55px;
+			color:#fff;
+		 }
+		 .fis a{
+		  position:fixed;
+			right:25px;
+			bottom:10px;
+			width:20px;
+			height:20px;
+		 }
+		 </style>
+ </head>
+ <body>
+<!-- 顶部 二级导航菜单   -->
+   <div class="container"> 
+	   <table></table>
+	   <div class="header">
+	   <div id="nav">
+        <ul>
+        <li>
+         <a href ="01-666升级版.html" >FOR HIM</a>
+       </li>
+       <li>
+         <a href="04_shoes.html">FOR HEM</a>
+		 <ul>
+         <li><a href="javascript:;">FOR HIM</a> </li>
+         <li><a href="javascript:;">FOR SHE</a> </li>
+         <li><a href="javascript:;">FOR PPP</a> </li>
+		      <li><a href="javascript:;">LOOK H5</a> </li>
+         <li><a href="javascript:;">LOOK Jquery</a> </li>
+       </ul>
+       </li>
+       <li>
+         <a href="product.html">LOOK BOOK</a>
+		 <ul>
+         <li><a href="javascript:;">LOOK JS</a> </li>
+         <li><a href="javascript:;">LOOK Css3</a> </li>
+         <li><a href="javascript:;">LOOK H5</a> </li>
+         <li><a href="javascript:;">LOOK Jquery</a> </li>
+       </ul>
+       </li>
+		<li>
+         <a href="product.html">ABOUT US</a>
+		 <ul>
+         <li><a href="javascript:;">LOOK JS</a> </li>
+		     <li><a href="javascript:;">LOOK H5</a> </li>
+				 <li><a href="javascript:;">Jquery</a> </li>
+				 <li><a href="javascript:;">FOR PPP</a> </li>
+		      <li><a href="javascript:;">LOOK H5</a> </li>
+       </ul>
+       </li>
+       </ul>
+     </div>
+			 <div class="logo">
+			     <img src="images/logo-dark.png" alt="">
+			 </div>
+			 <div class="header-right">
+			    <ul>
+						<li>
+						  <a href="#"><input class="input" type="text" placeholder="请输入要搜索的内容" width="100" height="20"></a>
+                <button>搜索</button>
+						</li>
+						<li>
+						  <a href="06_shopping.html"><img class="gs" src="images/shop_car.png" alt="" title="购物车"></a>
+						</li>
+					</ul>
+			 </div>
+			  <div class="header-into">
+					<a href="02_userinsert.html" title="登陆">登陆</a> /
+					<a href="#" title="注册">注册</a>
+					</div>
+       </div> 
+<!-- 图片轮播 -->
+		 <div class="branch_bar">
+			  <ul class="branch" style="z-index:-999;position:relative;" class="play">
+					 <li><img src="images/bg-3.jpg" alt=""></li>
+					 <li><img src="images/bg-1.jpg" alt=""></li>
+					 <li><img src="images/bg-3.jpg" alt=""></li>
+					 <li><img src="images/bg-1.jpg" alt=""></li>
+					 <li><img src="images/bg-3.jpg" alt=""></li>
+        </ul>
+				  
+				 <span class="prev">«</span>
+          <span class="next">»</span>
+			</div>
+    <!-- 大图下面俩张图片 -->
+<div class="header-one">
+	<div class="header-one1">
+		<p class="name">SPRING/SUMMER 2019</p>
+		<p class="datlis">HAPPY NEW YEAR</p> 
+		<p class="p1">DAY GOOD OK SHOES</p>
+		<a href=""><button class="view" style="vertical-align:middle"><span>FOR HIM</span></button></a>
+  </div>
+	<div class="img">
+		<img src="images/10 (1).jpg" width="394" height="550" border="0" alt="">
+	</div>
+	<div class="header-one2">
+	  <div class="img1">
+		  <img src="images/10 (2).jpg" width="394" height="550" border="0" alt="">
+	  </div>
+		<div class="desc">
+		  <p class="name">SPRING/SUMMER 2019</p>
+		  <p class="datlis">HAPPY&nbspNEW&nbspYEAR&nbspDAY</p>
+		  <p class="p1">GOOD&nbspOK&nbspSHOES</p>
+			<a href=""><button class="view" style="vertical-align:middle"><span>FOR&nbspHIM</span></button></a>
+    </div>
+	</div>
+</div>
+<!-- 三张小图 -->
+<div class="section">
+	<div class="desc-1">
+		<p class="name-1">ALL of 2019</p>
+		<p class="datlis-1">MODDO Watches</p>
+		<a href="" class="view-1">SHOP NOW</a>
+	</div>
+	<div class="img3">
+	  <img src="images/11 (2).jpg"alt="">
+	</div>
+	<div class="desc-2">
+		<p class="name-2">ALL of 2019</p>
+		<p class="datlis-2">MODDO Watches</p>
+		<a href="" class="view-2">SHOP NOW</a>
+	</div>
+	<div class="img4">
+	  <img src="images/11 (1).jpg"alt="">
+	</div>
+	<div class="desc-3">
+		<p class="name-3">ALL of 2019</p>
+		<p class="datlis-3">MODDO Watches</p>
+		<a href="" class="view-3">SHOP NOW</a>
+	</div>
+	<div class="img5">
+	  <img src="images/11 (3).jpg"alt="">
+	</div>
+ </div>
+<!--背景图  -->
+ <div class="bg">
+	  <h3>Our Blog</h3>
+	 <div class="blog">
+	 <div class="blog-left-agileits">
+			<p>Jan</p>
+			<span>18</span>
+	</div>
+	 <div class="blog-right-agileits-w3layouts">
+		<h4>
+		<a href="#">eoquie int temporant 2018</a>
+		</h4>
+	 <p>
+		<a href="#">Cat Life</a>
+		</p>
+	</div>
+	</div>
+<!-- 第二个 -->
+	<div class="blog">
+	 <div class="blog-left-agileits">
+			<p>Jan</p>
+			<span>19</span>
+	</div>
+	 <div class="blog-right-agileits-w3layouts">
+		<h4>
+		<a href="#">eoquie int temporant 2018</a>
+		</h4>
+	 <p>
+		<a href="#">Cat Life</a>
+		</p>
+	</div>
+	</div>
+<!-- san -->
+<div class="blog">
+	 <div class="blog-left-agileits1">
+			<p>Jan</p>
+			<span>20</span>
+	</div>
+	 <div class="blog-right-agileits-w3layouts1">
+		<h4>
+		<a href="#">eoquie int temporant 2018</a>
+		</h4>
+	 <p>
+		<a href="#">Cat Life</a>
+		</p>
+	</div>
+	</div>
+<!--  四个-->
+<div class="blog">
+	 <div class="blog-left-agileits2">
+			<p>Jan</p>
+			<span>20</span>
+	</div>
+	 <div class="blog-right-agileits-w3layouts2">
+		<h4>
+		<a href="#">eoquie int temporant 2018</a>
+		</h4>
+	 <p>
+		<a href="#">Cat Life</a>
+		</p>
+	</div>
+	</div>
+	<!--  5个-->
+<div class="blog">
+	 <div class="blog-left-agileits3">
+			<p>Jan</p>
+			<span>20</span>
+	</div>
+	 <div class="blog-right-agileits-w3layouts3">
+		<h4>
+		<a href="#">eoquie int temporant 2018</a>
+		</h4>
+	 <p>
+		<a href="#">Cat Life</a>
+		</p>
+	</div>
+	</div>
+	<!--  6个-->
+<div class="blog">
+	 <div class="blog-left-agileits4">
+			<p>Jan</p>
+			<span>20</span>
+	</div>
+	 <div class="blog-right-agileits-w3layouts4">
+		<h4>
+		<a href="#">eoquie int temporant 2018</a>
+		</h4>
+	 <p>
+		<a href="#">Cat Life</a>
+		</p>
+	</div>
+	</div>
+<div class="footer">
+	<div class="foot">
+	  <div class="foot1">
+	   <div id="foot-1" class="my-small">
+	     <img src="images/1.jpg" data-target="images/1-1 (4).jpg" alt="">
+	     <img src="images/3.jpg" data-target="images/1-1 (1).jpg" alt="">
+	     <img src="images/4.jpg" data-target="images/1-1 (2).jpg" alt="">
+	     <img src="images/2.jpg" data-target="images/1-1 (3).jpg" alt="">
+       <img src="images/3.jpg" data-target="images/1-1 (1).jpg" alt="">
+	     <img src="images/4.jpg" data-target="images/1-1 (2).jpg" alt="">
+			 <img src="images/1.jpg" data-target="images/1-1 (4).jpg" alt="">
+	     <img src="images/3.jpg" data-target="images/1-1 (1).jpg" alt="">
+	   </div>
+	  <!--<div class="my-big">
+		   <img src="images/1-1 (4).jpg" alt="">
+		   <img src="images/1-1 (1).jpg" alt="">
+		   <img src="images/1-1 (2).jpg" alt="">
+		   <img src="images/1-1 (3).jpg" alt="">
+		   <p class="c1">SSK KD PDP LDO K vdi</p>
+		   <span>$5000</span>
+	  </div>-->
+	 </div>
+	<!--<div class="foot-2">
+		  <div class="m1">
+			   <img src="images/1.jpg" width="129" height="129" border="0" alt="">
+			 <div class="m1-1">
+			    <p>J Y A M M H</p>
+					<span>$666</span>
+			 </div>
+			</div>
+			<div class="m1">
+			   <img src="images/3.jpg" width="129" height="129" border="0" alt="">
+			 <div class="m1-1">
+			    <p>J Y A M M H</p>
+					<span>$666</span>
+			 </div>
+			</div>
+			<div class="m2">
+			   <img src="images/2.jpg" width="278" height="140" border="0" alt="">
+			 <div class="m1-2">
+			    <p>J Y A M M H N Z B</p>
+					<span>$888</span>
+			 </div>
+			</div>
+			<div class="m3">
+			   <img src="images/9.jpg" width="278" height="140" border="0" alt="">
+			 <div class="m1-2">
+			    <p>J Y A M M H N Z B</p>
+					<span>$999</span>
+			 </div>
+			</div>
+			<div class="m4">
+			   <img src="images/4.jpg" width="129" height="129" border="0" alt="">
+			 <div class="m1-1">
+			    <p>J Y A M M H</p>
+					<span>$666</span>
+			 </div>
+			</div>
+			<div class="m5">
+			   <img src="images/6.jpg" width="129" height="129" border="0" alt="">
+			 <div class="m1-1">
+			    <p>J Y A M M H</p>
+					<span>$666</span>
+			 </div>
+			</div>
+			<div class="m6">
+			   <img src="images/7.jpg" width="129" height="129" border="0" alt="">
+			 <div class="m1-1">
+			    <p>J Y A M M H</p>
+					<span>$666</span>
+			 </div>
+			</div>
+			<div class="m7">
+			   <img src="images/8.jpg" width="129" height="129" border="0" alt="">
+			 <div class="m1-1">
+			    <p>J Y A M M H</p>
+					<span>$666</span>
+			 </div>
+			</div>
+			<div class="m8">
+			   <img src="images/10.jpg" width="129" height="129" border="0" alt="">
+			 <div class="m1-1">
+			    <p>J Y A M M H</p>
+					<span>$666</span>
+			 </div>
+			</div>
+		 </div>-->
+	 </div>
+  </div>
+<div class="footers">
+   <div class="wrapper">
+	  <div class="m">
+		 <div class="view2">
+     <img src="images/169x169_1.jpg" alt="">
+		 <div class="hover"><h3>皮鞋</h3>皮鞋（leather shoe）是采用天然皮革为主要原料</div>
+		 </div>
+		 <div class="view2">
+     <img src="images/169x169_2.jpg" alt="">
+		 <div class="hover"><h3>皮鞋</h3>皮鞋（leather shoe）是采用天然皮革为主要原料</div>
+		 </div>
+		 <div class="view2">
+     <img src="images/169x169_3.jpg" alt="">
+		 <div class="hover"><h3>皮鞋</h3>皮鞋（leather shoe）是采用天然皮革为主要原料</div>
+		 </div>
+     <div class="view2">
+     <img src="images/169x169_4.jpg" alt="">
+		 <div class="hover"><h3>皮鞋</h3>皮鞋（leather shoe）是采用天然皮革为主要原料</div>
+		 </div>
+		 <div class="view2">
+     <img src="images/169x169_1.jpg" alt="">
+		 <div class="hover"><h3>皮鞋</h3>皮鞋（leather shoe）是采用天然皮革为主要原料</div>
+		 </div>
+    <div class="view2">
+     <img src="images/169x169_5.jpg" alt="">
+		 <div class="hover"><h3>皮鞋</h3>皮鞋（leather shoe）是采用天然皮革为主要原料</div>
+		 </div>
+     <div class="view2">
+     <img src="images/169x169_6.jpg" alt="">
+		 <div class="hover"><h3>皮鞋</h3>皮鞋（leather shoe）是采用天然皮革为主要原料</div>
+		 </div>
+		</div>
+		</div>
+		<div class="warp">
+		<div class="m2">
+		 <img src="images/texture-1_dark.png" alt="">
+		 <div class="mask">
+		  <span>@trendstter</span>
+			<p>ANIENT DSLKL LFK SLREKL LRGKL K<br>kdlgk dlk sdgk</p>
+		 </div>
+		</div>
+		</div>
+		<div class="m3">
+     <div class="view2">
+     <img src="images/169x169_5.jpg" alt="">
+		 <div class="hover"><h3>皮鞋</h3>皮鞋（leather shoe）是采用天然皮革为主要原料</div>
+		 </div>
+     <div class="view2">
+     <img src="images/169x169_5.jpg" alt="">
+		 <div class="hover"><h3>皮鞋</h3>皮鞋（leather shoe）是采用天然皮革为主要原料</div>
+		 </div>
+     <div class="view2">
+     <img src="images/169x169_5.jpg" alt="">
+		 <div class="hover"><h3>皮鞋</h3>皮鞋（leather shoe）是采用天然皮革为主要原料</div>
+		 </div>
+     <div class="view2">
+     <img src="images/169x169_5.jpg" alt="">
+		 <div class="hover"><h3>皮鞋</h3>皮鞋（leather shoe）是采用天然皮革为主要原料</div>
+		 </div>
+     <div class="view2">
+     <img src="images/169x169_5.jpg" alt="">
+		 <div class="hover"><h3>皮鞋</h3>皮鞋（leather shoe）是采用天然皮革为主要原料</div>
+		 </div>
+     <div class="view2">
+     <img src="images/169x169_5.jpg" alt="">
+		 <div class="hover"><h3>皮鞋</h3>皮鞋（leather shoe）是采用天然皮革为主要原料</div>
+		 </div>
+     <div class="view2">
+     <img src="images/169x169_5.jpg" alt="">
+		 <div class="hover"><h3>皮鞋</h3>皮鞋（leather shoe）是采用天然皮革为主要原料</div>
+		 </div>
+    </div>
+		<div class="m4">
+		 <img src="images/169x169_10.jpg" alt="">
+		</div>
+		<div class="m7">
+		 <img src="images/169x169_8.jpg" alt="">
+		</div>
+		<div class="m5">
+		 <img src="images/169x169_11.jpg" alt="">
+		</div>
+		<div class="m6">
+		 <img src="images/169x169_6.jpg" alt="">
+		</div>
+  </div>
+<div class="give">
+	<span>Contact Us</span>
+	<hr>
+  <div class="give_1">
+   <input class="f1" text="Welcome to beijing" type="text" placeholder="Your name">
+   <input class="f2" text="Welcome to beijing" type="text" placeholder="Your eamil">
+	</div>
+	<div class="give_2">
+   <input class="f1" text="Welcome to beijing" type="text" placeholder="Your subject">
+   <input class="f2" text="Welcome to beijing" type="text" placeholder="Phone nunber">
+	</div>
+	<div class="give_3">
+   <input class="f1" text="Welcome to beijing" type="text" placeholder="Your message">
+	</div>
+	<input class="f4" type="submit" value="Send"></input>
+	<div class="address">
+	 <img src="images/foodstore_adriss.png" alt="">
+	 <p>LOCATION</p>
+	 <span>345 Setwant natrer,&nbsp
+    Metropolitan, Italy<br>	.Setwant natrer</span>
+	</div>
+	<div class="address2">
+	 <img src="images/orderinfo_img4.png" alt="">
+	 <p>E-MAIL</p>
+	 <span>3Example1@gmail.com<br>
+      635Example2@gmail.com</span>
+	</div>
+	<div class="address3">
+	 <img src="images/foodstore_adriss.png" alt="">
+	 <p>PHONE</p>
+	 <span>345 Setwant natrer,&nbsp
+    Metropolitan, Italy<br>	.Setwant natrer</span>
+	</div>
+</div>
+ <div class="ft">
+   <div class="ft-1">
+	  <p>Some More</p>
+		<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed ligula ac metus finibus hendrerit sed at libero. Praesent blandit dignissim elit, vel feugiat nulla porta a. Praesent tellus eros, consectetur quis tortor at, tempor varius quam.</span>
+	 </div>
+	 <div class="ft-2">
+	  <p>Some More</p>
+		<img src="images/169x169_10.jpg" alt="">
+     <img src="images/169x169_11.jpg" alt="">
+     <img src="images/169x169_12.jpg" alt="">
+     <img src="images/169x169_13.jpg" alt="">
+     <img src="images/169x169_5.jpg" alt="">
+     <img src="images/169x169_6.jpg" alt="">
+	 </div>
+	 <div class="ft-3">
+	  <p>Latest Tweets</p>
+		<span>Latest Tweets<br>	@example sit amet consectetur adipiscing.      http://ax.by/zzzzPosted 3 days ago.
+     @example sit amet consectetur adipiscing. http://cx.dy/zzzz
+     Posted 3 days ago.</span>
+	 </div>
+ </div>
+ <div class="end">
+  <p>Copyright &copy 2018.Company name All rights reserved.</p>
+ </div>
+ <div class="fis"><a href=""><img src="image/=0.jpg" alt=""></a></div>
+ <script src="js/jquery-1.11.3.js"></script>
+ <script>
+		var $img=$(".my-small"); 
+   //查找大图片备用
+   var $big=$(".my-big");
+   //查找触发事件元素
+   //绑定水煎处理函数
+   $img.click(function(){
+      //查找修改元素
+      //先获的小图片身上带的data-target属性值
+      var src=$(this).attr("data-target");
+     $big.attr({src})  //src:src  属性src的值来自于外部变量src
+   //修改元素
+    })
+ </script>
+<!-- //轮播图		 -->
+	 <script type="text/javascript">
+	$(function(){
+		var timer = '';
+		var branch_len = $('.branch li').length;
+		var branch_img_len = $('.branch img').width();
+		var branch_img_count_len = parseInt(branch_len * branch_img_len);
+		
+		$(".next").click(function(){
+			if(!$(".branch li:first").is(":animated")){
+				$(".branch li:first").animate({'marginLeft':'-=1423px'},500,function(){
+					$(".branch li:first").css('marginLeft',0);
+					$('.branch').append($(".branch li:first"));
+				});
+			}
+		});
+		$(".prev").click(function(){
+			if(!$(".branch li:first").is(":animated")){
+				$('.branch').prepend($(".branch li:last"));
+				$('.branch li:first').css({'marginLeft':'-1423px'});
+				$(".branch li:first").animate({'marginLeft':'+=1423px'},500,function(){
+					$(".branch li:first").css('marginLeft','0px');
+				});
+			}
+		});
+		
+		timer = setInterval(function(){
+			$(".next").click();
+		},2000);
+		
+		$(".branch_bar").mouseenter(function(){
+			clearInterval(timer);
+		});
+		
+		$(".branch_bar").mouseleave(function(){
+			timer = setInterval(function(){
+				$(".next").click();
+			},2000)
+		});
+	});
+</script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+<!--二级导航栏js-->
+<!--<script>
+    window.onload = function() {
+    var oUl = document.getElementById('menu');
+    var aLi = oUl.getElementsByTagName('li');
+    var aDiv = oUl.getElementsByTagName('div');
+    var timer = null;
+    for (var i = 0; i < aLi.length; i++) {
+    var oA = aLi[i].getElementsByTagName('a')[0];
+    oA.index = i;
+    clearTimeout(timer);
+    oA.onmouseover = function() {
+    this.className = 'hover';
+    aDiv[this.index].style.display = 'block';
+}
+oA.onmouseout = function() {
+    this.className = '';
+    n = this.index;
+    timer = setTimeout(function() {
+    aDiv[n].style.display = 'none';
+}, 200);
+}
+aDiv[i].onmouseover = function() {
+    clearTimeout(timer);
+    this.style.display = 'block';
+}
+aDiv[i].onmouseout = function() {
+    this.style.display = 'none';
+}
+}
+}
+</script>-->
+<script>
+ $("button").click(function(){
+   console.log(`搜索${$(":text").val()}内容`);
+ })
+  $(":text").keyup(function(e){
+	 if(e.keyCode==13){
+	  $("button").click();
+	 }
+	})
+</script>
+ </body>
+</html>

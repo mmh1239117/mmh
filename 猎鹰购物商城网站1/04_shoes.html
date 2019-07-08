@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> new document </title>
+  <meta charset="UTF-8">
+	<link rel="stylesheet" href="lunbo.css">
+	<link rel="stylesheet" href="footer.css">
+	<style>
+	 *{margin:0;padding:0;
+		  box-sizing:border-box;
+		 }
+		 body{
+		  margin:0 auto;
+		 }
+		 .container{
+		   width:100%;height:2330px;
+			 margin:0 auto;
+		 }
+		 .header{
+		  height:120px;
+		   position:relative;
+		 }
+	  *{margin:0;padding: 0;list-style: none;text-decoration: none;}
+    #nav{
+	    position:absolute;
+	     width: 600px;
+		 height: 60px;
+		 color:#000;
+		 top:25px;
+		 left:25px;
+		 padding:15px;
+		 z-index:200;
+		 }
+  #nav ul{background: #aaa;color:#000;}
+  #nav ul li{float:left; display:block; height: 40px; line-height: 40px; padding: 0 20px; position: relative;}
+  #nav ul li:hover{background: #cea;}
+  #nav ul li ul li{float: none;}
+/*关键一：将二级菜单设置为display：none;*/
+  #nav ul li ul{position: absolute;top:40px;left: 0; display: none;}
+  #nav ul li ul li:hover{background: red;}
+/*关键二：在划过二级菜单从属的一级菜单时，设置为display:block;*/
+  #nav ul li:hover ul{display: block;}
+		  .logo {
+		 position:absolute;
+		  top:32px;
+		 left:620px;
+		 }
+		   .header-right{
+			  margin-left:800px;
+			}
+			 .header-right button{
+			  width:60px;height:35px;
+				margin-top:30px;
+				margin-right:180px;
+			}
+			 .header-right .gs{
+			  margin-top:20px;
+				margin-right:90px;
+				width:50px;
+				height:50px;
+			}
+		 .header-right button:last-child{
+			 border-radius:0 5px 5px 0;
+			}
+			 .header-right .input:first-child{
+			 border-radius:5px 0 0 5px;
+			}
+			 .header-right .input{
+			 position:absolute;
+			  width:300px;height:35px;
+				padding:10px;
+				right:260px;
+				top:50px;
+			}
+		  .header-right li{
+			list-style:none;
+			padding:20px;
+			position:absolute;
+			top:-5px;
+			right:10px;
+		 }
+		  .header-into{
+		   position:absolute;
+			 border:1px solid green;
+			 border-radius:5px;
+			 line-height:30px;
+			 height:35px;
+			 top:45px;
+			 right:10px;
+			 color:#ddd;
+		 }
+      .header-into a{
+		   text-decoration:none;
+			 color:#f00;
+			 margin-top:20px;
+		 }
+			.section{
+			 width:1182px;height:1260px;
+			 padding:56px 0;
+			}
+     .section .section-left{
+		  width:235px;height:1569px;
+			border:1px solid #f00;
+			position:relative;
+			padding:0 15px;
+			left:180px;
+			top:-20px;
+			float:left;
+		 }
+		  .section .section-left .ul{
+		 width:215px;
+		 background:#ddd;
+		 }
+		 .section .section-left .ul li{
+		  width:210px;height:25px;
+		 }
+		 .section .section-left .ul li:hover{
+		  background:purple;
+		 }
+		 .section .section-left p{
+		  font-size:2rem;
+			padding:0;
+		  font-family: 'Lato', sans-serif;
+			border-bottom: 1px solid #000;
+			margin-top:30px;
+		 }
+		 .section .section-left ul li{
+		  list-style:none;
+			display: list-item;
+			padding:5px;
+			margin-left:-5px;
+		 }
+		 .section .section-left .lorem{
+		   width:205px;
+			 height:53px;
+		   border:1px solid #fff;
+		   background-image:url("img/product1.jpg");
+			 line-height:50px;
+			 padding:0 15px;
+			 color: #fff;
+			 margin-top:30px;
+		 }
+		  .section .section-left .lorem input{
+			 background-color:rgba(0,0,0,0.0);
+			 width:80px;
+			 height:25px;
+			 color:#ffff;
+			 position:absolute;
+			 top:243px;
+			 left:135px;
+			}
+		 .section .section-left .lorem input a{
+		   font-size: 0.8em;
+       float: right;
+       text-decoration: none;
+       border: 1px solid #fff;
+       padding: 0.2em 0.4em;
+		 }
+		  .section .section-left .lorem1 div a{
+			 text-decoration:none;
+			}
+		  .section .section-left .lorem1 div{
+			 height:112px;
+			 padding:0 10px;
+			 margin-left:-10px;
+			 margin-top:30px;
+			}
+		 .section .section-left .lorem1 div ul li{
+			 list-style:none;
+			 width:40px;height:30PX;
+			 border:1px solid #000;
+			 float:left;
+			 margin:2px;
+			 font-size:14px;
+       line-height:25px;
+		 }
+		 .section .section-left .lorem3{
+		  width:205px;height:95px;
+			position:relative;
+			top:45px;
+		 }
+		 .section .section-left .lorem3 a{
+		  text-decoration:none;
+			color: #000;
+			position:absolute;
+			top:2px;
+			left:102px;
+		 }
+		 .section .section-left .lorem3 span{
+		  font-size: 1.7em;
+       position:absolute;
+      display: block;
+      color: #EF5F21;
+      top:95px;
+			left:100px;
+		 }
+		 .section .section-left .lorem4{
+		  width:205px;height:95px;
+			position:relative;
+			top:110px;
+		 }
+		 .section .section-left .lorem4 a{
+		  text-decoration:none;
+			color: #000;
+			position:absolute;
+			left:102px;
+		 }
+		 .section .section-left .lorem4 span{
+		  font-size: 1.7em;
+       position:absolute;
+      display: block;
+      color: #EF5F21;
+      top:93px;
+			left:100px;
+		 }
+		 .section .section-left .im{
+		   width:205px;
+			 height:238px;
+			 position:absolute;
+			 bottom:340px;
+
+		 }
+		 .section .section-left .lorem5{
+		  position:absolute;
+			bottom:350px;
+			left:20px;
+		 }
+		 .section .section-left .lorem5 a{
+		  text-decoration:none;
+			font-size:36px;
+			position:absolute;
+		  top:-190px;
+			color:orange;
+		 }
+		 .section .section-left .lorem5 h1{
+		  text-decoration:none;
+			font-size:86px;
+			position:absolute;
+		  top:-95px;
+			left:10px;
+			color:orange;
+		 }
+		 .section .section-right{
+		  width:755px;height:1150px;
+			border:1px solid #f00;
+			position:relative;
+			left:460px;
+			top:-20px;
+		 }
+		 .section .section-right .col-1{
+		  width:205px;
+			height:308px;
+			position:absolute;
+			top:10px;
+			left:10px;
+		 }
+		 .section .section-right img{
+		  width:205px;
+			height:208px;
+		 }
+		 .section .section-right .wrap{
+		  width:205px;
+			height:208px;
+			overflow:hidden;
+			border:2px solid #f00;
+			transition: all 0.5s;
+			z-index:1;
+		 }
+		 .section .section-right img:hover{
+		  transform:scale(1.3);
+		 }
+		 .section .section-right p{
+		  font-size: 1em;
+      color:#949494;
+      text-align:center;
+      line-height:1.3em;
+      padding: 1em 0;
+		 }
+		 .section .section-right .a1{
+		 font-size: 1.1em;
+     color: #FFF;
+     text-align: center;
+     background: #EF5F21;
+     padding:0.5em 4em;
+		 text-decoration:none;
+		}
+		.section .section-right .col-2{
+		  width:205px;
+			height:308px;
+			position:absolute;
+			top:10px;
+			left:261px;
+		 }
+		 .section .section-right .col-3{
+		  width:205px;
+			height:308px;
+			position:absolute;
+			top:10px;
+			left:521px;
+		 }
+		 .section .section-right .col-4{
+		  width:205px;
+			height:308px;
+			position:absolute;
+			top:380px;
+			left:10px;
+		 }
+		 .section .section-right .col-5{
+		  width:205px;
+			height:308px;
+			position:absolute;
+			top:380px;
+			left:261px;
+		 }
+		  .section .section-right .col-6{
+		  width:205px;
+			height:308px;
+			position:absolute;
+			top:380px;
+			left:521px;
+		 }
+		 .section .section-right .col-7{
+		  width:205px;
+			height:308px;
+			position:absolute;
+			bottom:90px;
+			left:521px;
+		 }
+		 .section .section-right .col-8{
+		  width:205px;
+			height:308px;
+			position:absolute;
+			bottom:90px;
+			left:261px;
+		 }
+		  .section .section-right .col-9{
+		  width:205px;
+			height:308px;
+			position:absolute;
+			bottom:90px;
+			left:10px;
+		 }
+      ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+		margin-left:520px;
+		margin-top:10px;
+    }
+   ul.pagination li {display: inline;}
+   ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    }
+   ul.pagination li a.active {
+    background-color: #4CAF50;
+    color: white;
+   }
+   ul.pagination li a:hover:not(.active) {background-color: #ddd;}
+ 	</style>
+<body>
+<!-- 导航 -->
+ <div class="header">
+    <div id="nav">
+        <ul>
+        <li>
+         <a href ="01-666升级版.html" >FOR HIM</a>
+       </li>
+       <li>
+         <a href="04_shoes.html">FOR HEM</a>
+		 <ul>
+         <li><a href="javascript:;">FOR HIM</a> </li>
+         <li><a href="javascript:;">FOR SHE</a> </li>
+         <li><a href="javascript:;">FOR PPP</a> </li>
+		 <li><a href="javascript:;">LOOK HTML5</a> </li>
+         <li><a href="javascript:;">LOOK Jquery</a> </li>
+       </ul>
+       </li>
+       <li>
+         <a href="product.html">LOOK BOOK</a>
+		 <ul>
+         <li><a href="javascript:;">LOOK JS</a> </li>
+         <li><a href="javascript:;">LOOK Css3</a> </li>
+         <li><a href="javascript:;">LOOK HTML5</a> </li>
+         <li><a href="javascript:;">LOOK Jquery</a> </li>
+       </ul>
+       </li>
+		<li>
+         <a href="product.html">ABOUT US</a>
+		 <ul>
+         <li><a href="javascript:;">LOOK JS</a> </li>
+		 <li><a href="javascript:;">LOOK HTML5</a> </li>
+         <li><a href="javascript:;">LOOK Jquery</a> </li>
+       </ul>
+       </li>
+       </ul>
+     </div>
+	<div class="logo">
+   <img src="images/logo-dark.png" alt="">
+	</div>
+	<div class="header-right">
+		<ul>
+			<li>
+			  <a href="#"><input class="input" type="text" placeholder="请输入要搜索的内容" width="100" height="20"></a>
+				<button>搜索</button>
+			</li>
+			<li>
+			  <a href="06_shopping.html"><img class="gs" src="images/shop_car.png" alt="" title="购物车"></a>
+			</li>
+	</ul>
+		</div>
+		<div class="header-into">
+			<a href="insert.html" title="登陆">登陆</a> /
+			<a href="#" title="注册">注册</a>
+  	</div>
+ </div>
+</div>
+<hr>
+<!--详情页 -->
+<div class="section">
+  <div class="section-left">
+	  <p>Categories</p>
+		<ul class="ul">
+		 <li>Men</li>
+		 <li>Women</li>
+		 <li>Kids</li>
+		 <li>Accesories</li>
+		 <li>Shoes</li>
+		</ul>
+		<div class="lorem">
+		  <span>Lorem Ipsum</span>
+			<a href="04_shoes.html"><input type="button" value="SHOW NOW"></a>
+		</div>
+		<div class="lorem1">
+		  <p>Tags</p>
+			<div>
+			<ul>
+			 <li><a href="04_shoes.html">design</a></li>
+			 <li><a href="04_shoes.html">fashion</a></li>
+			 <li><a href="04_shoes.html">lorem</a></li>
+			 <li><a href="04_shoes.html">design</a></li>
+			 <li><a href="04_shoes.html">fashion</a></li>
+			 <li><a href="04_shoes.html">design</a></li>
+			 <li><a href="04_shoes.html">design</a></li>
+			 <li><a href="04_shoes.html">design</a></li>
+			 <li><a href="04_shoes.html">fashion</a></li>
+			 <li><a href="04_shoes.html">lorem</a></li>
+			 <li><a href="04_shoes.html">fashion</a></li>
+			 <li><a href="04_shoes.html">design</a></li>
+			</ul>
+			</div>
+		</div>
+		 <p style="margin-top:50px">Best Sellers</p>
+		<div class="lorem3">
+			<img src="img/p1.jpg" alt="">
+			<a href="04_shoes.html">Lorem ipsum dolor sit amet consectetuer</a>
+			<span>$40.00</span>
+		</div>
+		<div class="lorem4">
+			<img src="img/p2.jpg" alt="">
+			<a href="04_shoes.html">Lorem ipsum dolor sit amet consectetuer</a>
+			<span>$40.00</span>
+		</div>
+		<img class="im" src="img/pro.jpg" alt="">
+		<div class="lorem5">
+		  <a href="04_shoes.html">DISCOUNT</a>
+			<h1>60%</h1>
+		</div>
+	</div>
+ <div class="section-right">
+	  <div class="col-1">
+		<div class="wrap">
+		<a href="05_shoes-small.html"><img src="img/pi3.jpg" alt=""></a>
+		</div>
+		 <p>It is a long established fact that a reader</p>
+		 <a href="#" class="a1">$500.00</a>
+		</div>
+		 <div class="col-2">
+		 <div class="wrap">
+		 <a href="05_shoes-small.html"><img src="img/pi4.jpg" alt=""></a>
+		 </div>
+		 <p>It is a long established fact that a reader</p>
+		 <a href="#" class="a1">$500.00</a>
+		</div>
+		<div class="col-3">
+		<div class="wrap">
+		 <a href="05_shoes-small.html"><img src="img/pi2.jpg" alt=""></a>
+		 </div>
+		 <p>It is a long established fact that a reader</p>
+		 <a href="#" class="a1">$500.00</a>
+		</div>
+		<div class="col-4">
+		<div class="wrap">
+		 <a href="05_shoes-small.html"><img src="img/pi1.jpg" alt=""></a>
+		 </div>
+		 <p>It is a long established fact that a reader</p>
+		 <a href="#" class="a1">$500.00</a>
+		</div>
+		<div class="col-5">
+		<div class="wrap">
+		 <a href="05_shoes-small.html"><img src="img/pi5.jpg" alt=""></a>
+		 </div>
+		 <p>It is a long established fact that a reader</p>
+		 <a href="#" class="a1">$500.00</a>
+		</div>
+		<div class="col-6">
+		<div class="wrap">
+		 <a href="05_shoes-small.html"><img src="img/pi3.jpg" alt=""></a>
+		 </div>
+		 <p>It is a long established fact that a reader</p>
+		 <a href="#" class="a1">$500.00</a>
+		</div>
+		<div class="col-7">
+		<div class="wrap">
+		 <a href="05_shoes-small.html"><img src="img/pi2.jpg" alt=""></a>
+		 </div>
+		 <p>It is a long established fact that a reader</p>
+		 <a href="#" class="a1">$500.00</a>
+		</div>
+		<div class="col-8">
+		<div class="wrap">
+		 <a href="05_shoes-small.html"><img src="img/pi3.jpg" alt=""></a>
+		 </div>
+		 <p>It is a long established fact that a reader</p>
+		 <a href="#" class="a1">$500.00</a>
+		</div>
+		<div class="col-9">
+		<div class="wrap">
+		 <a href="05_shoes-small.html"><img src="img/pi4.jpg" alt=""></a>
+		</div>
+		 <p>It is a long established fact that a reader</p>
+		 <a href="#" class="a1">$500.00</a>
+		</div>
+	</div>
+	<div class="col-10">
+	 <ul class="pagination">
+     <li><a href="#">«</a></li>
+     <li><a href="#">1</a></li>
+     <li><a class="active" href="#">2</a></li>
+     <li><a href="#">3</a></li>
+     <li><a href="#">4</a></li>
+     <li><a href="#">5</a></li>
+     <li><a href="#">6</a></li>
+     <li><a href="#">7</a></li>
+     <li><a href="#">»</a></li>
+  </ul>
+	</div>
+
+</div>
+<!--版权-->
+ <div class="ft">
+   <div class="ft-1">
+	  <p>Some More</p>
+		<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed ligula ac metus finibus hendrerit sed at libero. Praesent blandit dignissim elit, vel feugiat nulla porta a. Praesent tellus eros, consectetur quis tortor at, tempor varius quam.</span>
+	 </div>
+	 <div class="ft-2">
+	  <p>Some More</p>
+		<img src="images/169x169_10.jpg" alt="">
+     <img src="images/169x169_11.jpg" alt="">
+     <img src="images/169x169_12.jpg" alt="">
+     <img src="images/169x169_13.jpg" alt="">
+     <img src="images/169x169_5.jpg" alt="">
+     <img src="images/169x169_6.jpg" alt="">
+	 </div>
+	 <div class="ft-3">
+	  <p>Latest Tweets</p>
+		<span>Latest Tweets<br>	@example sit amet consectetur adipiscing.      http://ax.by/zzzzPosted 3 days ago.
+     @example sit amet consectetur adipiscing. http://cx.dy/zzzz
+     Posted 3 days ago.</span>
+	 </div>
+ </div>
+ <div class="end">
+  <p>Copyright &copy 2018.Company name All rights reserved.</p>
+ </div>
+ </body>
+</html>
